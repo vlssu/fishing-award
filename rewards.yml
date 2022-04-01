@@ -1,0 +1,708 @@
+1召唤巨人:                       #名称
+    type: 'item'                #类型
+    chance: 1                   #概率
+    material: 'bone'            #物品
+    amount: 1                   #数量
+    xp: 3                       #经验
+    message: '&7&l(!) &a&l啊? 巨人 !'  #提示文本
+    commands:                         #执行命令
+        - 'announcement:通告 (!) 某个人 发现了一只 远古巨人 !'
+        - 'execute as %player% at @s run summon minecraft:giant ~ ~1 ~1 {CustomName:"远古巨人"}'
+2黏糊糊的东西:
+    type: 'item'
+    chance: 30
+    material: 'seagrass'
+    amount: 1
+    xp: 3
+    lore:                       #文本
+       - '&6&l摸起来黏糊糊的'
+    message: '&7&l(!) &a&l鱼钩被黏糊糊的东西给缠住了'
+3鱼线断了:
+    type: 'item'
+    chance: 30
+    material: 'string'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l你的鱼线断了'
+4海带:
+    type: 'item'
+    chance: 30
+    material: 'kelp'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l被不知名的力量拉入水中，浮起来时获得了 一个海带'
+5召唤葵:
+    type: 'item'
+    chance: 0.8
+    material: 'golden_sword'
+    amount: 1
+    xp: 3
+    name: '&6&l弑葵剑'          #物品名
+    lore:
+       - '&c&l被你身边的行商羊驼(葵)吸引而来'
+    enchantments:              #附魔
+       - 'SHARPNESS:10'
+    message: '&7&l(!) &a&l葵！'
+    treasure: true             #运气加成
+    commands:
+        - 'announcement:通告 (!) 某个人 钓起了一只葵! 并且被赐予一把弑葵剑!'
+        - 'execute as %player% at @s run summon minecraft:trader_llama ~ ~1 ~1 {CustomName:"葵"}'
+6召唤杀手兔砸:
+    type: 'item'
+    chance: 1
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l召唤! 杀手兔砸 !'
+    commands:
+        - 'announcement:通告 (!) 某个人 钓起了一只 杀手兔砸!'
+        - 'execute as %player% at @s run summon minecraft:rabbit ~ ~1 ~1 {RabbitType:99,CustomName:"杀手兔砸"}'
+7召唤掠夺者:
+    type: 'item'
+    chance: 1
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l召唤! 掠夺者 !'
+    commands:
+        - 'announcement:通告 (!) 某个人 钓起了一只 掠夺者!'
+        - 'execute as %player% at @s run summon minecraft:pillager ~ ~1 ~1'
+8鳕鱼:
+    type: 'item'
+    chance: 80
+    material: 'cod'
+    amount: 1
+    xp: 3
+9热带鱼:
+    type: 'item'
+    chance: 30
+    material: 'tropical_fish'
+    amount: 1
+    xp: 3
+10鲑鱼:
+    type: 'item'
+    chance: 50
+    material: 'salmon'
+    amount: 1
+    xp: 3
+11冰红茶的小河豚:
+    type: 'item'
+    chance: 4
+    material: 'pufferfish'
+    amount: 1
+    xp: 3
+    name: '&b&l冰红茶的小河豚'
+    lore:
+        - '&6&l一只河豚很美味,'
+        - '&6&l就是身上的刺有点麻烦.'
+    message: '&7&l(!) &a&l你找到了冰红茶的小河豚!'
+    commands:
+        - 'announcement:通告 (!) 某个人 获得了 冰红茶的小河豚 但是被小河豚的刺扎了一下!'
+        - 'effect give %player% poison 10 2'      
+        - 'effect give %player% water_breathing 5 1'
+12鞍:
+    type: 'item'
+    chance: 6
+    material: 'saddle'
+    amount: 1
+    xp: 3
+13玻璃瓶:
+    type: 'item'
+    chance: 16
+    material: 'glass_bottle'
+    amount: 1
+    xp: 3
+14碗:
+    type: 'item'
+    chance: 16
+    material: 'bowl'
+    amount: 1
+    xp: 3
+15睡莲:
+    type: 'item'
+    chance: 16
+    material: 'waterlily'
+    amount: 1
+    xp: 3
+16竹子:
+    type: 'item'
+    chance: 16
+    material: 'bamboo'
+    amount: 1
+    xp: 3
+17绊线钩:
+    type: 'item'
+    chance: 16
+    material: 'tripwire_hook'
+    amount: 1
+    xp: 3
+18皮革:
+    type: 'item'
+    chance: 16
+    material: 'leather'
+    amount: 1
+    xp: 3
+19木棍:
+    type: 'item'
+    chance: 30
+    material: 'stick'
+    amount: 1
+    xp: 3
+20崽崽的奶瓶:
+    type: 'item'
+    chance: 4
+    material: 'potion'
+    amount: 1
+    xp: 3
+    name: '&b&l崽崽的奶瓶'
+    lore:
+       - '&6&l小奶夏为了想念那味道而刻意留下来的瓶子'
+       - '&6&l里面好像只剩下口水了.'
+    message: '&7&l(!) &a&l你找到了崽崽的奶瓶!'
+    commands:
+        - 'announcement:通告 (!) 某个人 获得了 崽崽的奶瓶!'
+21墨囊:
+    type: 'item'
+    chance: 16
+    material: 'ink_sac'
+    amount: 1
+    xp: 3
+22可可豆:
+    type: 'item'
+    chance: 16
+    material: 'cocoa_beans'
+    amount: 1
+    xp: 3
+23命名牌:
+    type: 'item'
+    chance: 6
+    material: 'name_tag'
+    amount: 1
+    xp: 3
+24鹦鹉螺壳:
+    type: 'item'
+    chance: 8
+    material: 'nautilus_shell'
+    amount: 1
+    xp: 3
+25弓:
+    type: 'item'
+    chance: 8
+    material: 'bow'
+    amount: 1
+    xp: 3
+    durability: '1-100'
+    bonus-enchantment-amount: 3
+    enchantments:
+        - 'infinity:1:3'
+        - 'mending:1:3'
+        - 'vanishing_curse:1:8'
+        - 'flame:1:10'
+        - 'punch:1-2:15'
+        - 'power:1-3:20'
+        - 'unbreaking:1-3:20'
+26蛋挞的臭皮鞋:
+    type: 'item'
+    chance: 6
+    material: 'leather_boots'
+    amount: 1
+    xp: 3
+    name: '&b&l蛋挞的臭皮鞋'
+    lore:
+       - '&6&l不知从哪掉入了水中'
+       - '&6&l幸运的保护?'
+    durability: '1-100'
+    message: '&7&l(!) &a&l你找到了蛋挞的臭皮鞋!'
+    commands:
+        - 'announcement:通告 (!) 某个人 找到了一双 蛋挞的臭皮靴! 幸运精灵追随他/她500秒!'
+        - 'effect give %player% luck 500 1'
+27神奇的鸡蛋:
+    type: 'item'
+    chance: 20
+    material: 'egg'
+    amount: 1
+    xp: 3
+    name: '&6&l神奇的鸡蛋'
+    lore:
+       - '&c&l在水里浸泡许久的蛋!'
+    message: '&7&l(!) &a&l你找到了神奇的鸡蛋!'
+28辣条:
+    type: 'item'
+    chance: 30
+    material: 'rotten_flesh'
+    amount: 1
+    xp: 3
+    name: '&6&l辣条'
+    lore:
+       - '&c某龙集团的授权食品!'
+    message: '&7&l(!) &a&l你找到了非常新鲜的辣条!'
+29召唤旅商:
+    type: 'item'
+    chance: 2
+    material: 'emerald'
+    amount: 2
+    xp: 3
+    name: '&2&l来自商人的佣金'
+    message: '&7&l(!) &a&l你看到了一个被追杀的商人!'
+    commands:
+        - 'announcement:通告 (!) 某个人 发现了一名被追杀的 商人!'
+        - 'execute as %player% at @s run summon minecraft:wandering_trader ~ ~1 ~1'
+        - 'execute as %player% at @s run summon minecraft:husk ~ ~1 ~5'
+30师叔的短裤:
+    type: 'item'
+    chance: 0.4
+    material: 'chainmail_leggings'
+    amount: 1
+    xp: 3
+    name: '&b&l师叔的裤衩子'
+    lore:
+        - '&6&l好像是师叔的裤衩子?'
+        - '&6&l裆部这是什么东西?'
+    unbreakable: true
+    enchantments:
+       - 'THORNS:1'
+    message: '&7&l(!) &a&l你找到了师叔的裤衩子!'
+    treasure: true
+    commands:
+        - 'announcement:通告 (!) 某个人 找到了 师叔丢失的裤衩子!'
+31能力的过期食品:
+    type: 'item'
+    chance: 2
+    material: 'poisonous_potato'
+    amount: 1
+    xp: 3
+    name: '&b&l能力的过期食品'
+    lore:
+        - '&6&l恶心的味道,'
+        - '&6&l闻着都难受.'
+    message: '&7&l(!) &a&l你找到了能力的过期食品!'
+    commands:
+        - 'announcement:通告 (!) 某个人 找到了 能力的过期食品 虚弱伴随着他/她!'
+        - 'effect give %player% weakness 100 2'
+32召唤小小:
+    type: 'item'
+    chance: 1
+    material: 'trident'
+    amount: 1
+    xp: 3
+    name: '&2&l海王三叉戟'
+    lore:
+       - '&c&l忠诚 !'
+       - '&c&l忠诚 !'
+       - '&c&l重复三遍 !'
+    enchantments:
+       - 'Loyalty:1'
+    message: '&7&l(!) &a&l海王小小!'
+    commands:
+        - 'announcement:通告 (!) 某个人 发现了 海王小小!'
+        - 'execute as %player% at @s run summon minecraft:elder_guardian ~ ~1 ~1 {CustomName:"海王小小"}'
+33冰心的吞噬稿:
+    type: 'item'
+    chance: 0.3
+    material: 'golden_pickaxe'
+    amount: 1
+    xp: 3
+    name: '&6&l冰心的吞噬稿'
+    lore:
+       - '&a&l冰心制作空置域时遗失的吞噬稿!'
+    enchantments:
+       - 'EFFICIENCY:5'
+    unbreakable: true
+    message: '&7&l(!) &a&l你找到了一把冰心的吞噬稿!'
+    treasure: true
+    commands:
+        - 'announcement:通告 (!) 某个人 找到了 冰心的吞噬稿!'
+34玖月的上衣:
+    type: 'item'
+    chance: 0.4
+    material: 'chainmall_chestplate'
+    amount: 1
+    xp: 3
+    name: '&b&l玖月的上衣'
+    lore:
+        - '&6&l玖月在水里洗澡时遗落的?'
+        - '&6&l胸前这是什么东西?'
+    unbreakable: true
+    enchantments:
+       - 'THORNS:1'
+    message: '&7&l(!) &a&l你找到了玖月的上衣!'
+    treasure: true
+    commands:
+        - 'announcement:通告 (!) 某个人 找到了 玖月丢失的上衣!'
+35乞丐的厕纸:
+    type: 'item'
+    chance: 8
+    material: 'paper'
+    amount: 1
+    xp: 3
+    name: '&b&l乞丐的厕纸'
+    lore:
+        - '&6&l一张纸，上面有几个数字,'
+        - '&6&l 114514.'
+    message: '&7&l(!) &a&l好臭! 什么东西!'
+    commands:
+        - 'announcement:通告 (!) 某个人 获得了 乞丐的厕纸 呕!'
+        - 'effect give %player% hunger 5 1'
+36师叔的牙签:
+    type: 'item'
+    chance: 3
+    material: 'stick'
+    amount: 1
+    xp: 3
+    name: '&6&l师叔的牙签'
+    lore:
+       - '&a师叔的牙签,物理的?'
+    enchantments:
+       - 'KNOCKBACK:2'
+    unbreakable: true
+    message: '&7&l(!) &a&l你找到了一根师叔的牙签!'
+    commands:
+        - 'announcement:通告 (!) 某个人 找到了 师叔的牙签 !'
+37童童的理想乡:
+    type: 'item'
+    chance: 4
+    material: 'painting'
+    amount: 1
+    xp: 3
+    name: '&6&l童童的理想乡'
+    lore:
+       - '&a童童自闭时所画'
+       - '&a不知道是什么样子的呢?'
+    message: '&7&l(!) &a&l你找到了一幅画!'
+    commands:
+        - 'announcement:通告 (!) 某个人 找到了 一幅画 !'
+38师叔的望远镜:
+    type: 'item'
+    chance: 0.2
+    material: 'spyglass'
+    amount: 1
+    xp: 3
+    name: '&b&l师叔的望远镜'
+    lore:
+       - '&6&l似乎是偷窥 &b&l小小 &6&l洗澡用的'
+       - '&6&l怎么上面黏糊糊的?'
+    unbreakable: true
+    message: '&7&l(!) &a&l你找到了师叔的望远镜!'
+    treasure: true
+    commands:
+        - 'announcement:通告 (!) 某个人 找到了 师叔丢失的望远镜 !'
+39奇怪的旗帜:
+    type: 'item'
+    chance: 5
+    material: 'white_banner'
+    amount: 1
+    xp: 3
+    name: '&b&l奇怪的旗帜'
+    lore:
+       - '&6&l由于长时间被水浸泡上面的文字花掉了'
+       - '&6&l但还是能看出来是一群人在强迫一个人女装.'
+    message: '&7&l(!) &a&l你找到了奇怪的旗帜!'
+    commands:
+        - 'announcement:通告 (!) 某个人 找到了 奇怪的旗帜 !'
+40假冒伪劣产品的浓缩精华:
+    type: 'item'
+    chance: 0.8
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l你找到了假冒伪劣产品的浓缩精华!'
+    treasure: true
+    commands:
+        - 'announcement:通告 (!) 某个人 看到假冒伪劣产品痛喝77瓶冰红茶产出的精华(喝吐了)并且不小心溅到了你,自求多福吧!'
+        - 'effect give %player% wither 180 2'
+41gmail喂你喝假酒:
+    type: 'item'
+    chance: 0.8
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l你饮用了gmail的假酒!'
+    treasure: true
+    commands:
+        - 'announcement:通告 (!) 某个人 喝下了 gmail酿造的假酒!'
+        - 'effect give %player% wither 180 3'
+        - 'effect give %player% nausea 180 3'
+        - 'effect give %player% poison 180 1'
+        - 'effect give %player% regeneration 180 1'
+42樰的美味蛋糕:
+    type: 'item'
+    chance: 0.3
+    material: 'cake'
+    amount: 1
+    xp: 3
+    name: '&b&l樰的蛋糕'
+    lore:
+       - '&6&l樰送出的美味蛋糕'
+       - '&6&l似乎十分美味呢~'
+    message: '&7&l(!) &a&l你找到了樰送出的蛋糕!'
+    treasure: true
+    commands:
+        - 'announcement:通告 (!) 获得了 樰的蛋糕 但它吸引了掠夺者的注意,他们来了 !'
+        - 'lightning %player%'
+        - 'effect give %player% bad_omen 200 1'
+43召唤鱿鱼:
+    type: 'item'
+    chance: 16
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l鱿鱼 !'
+    commands:
+        - 'execute as %player% at @s run summon minecraft:squid ~ ~1 ~1'
+44召唤发光鱿鱼:
+    type: 'item'
+    chance: 12
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l发光鱿鱼 !'
+    commands:
+        - 'execute as %player% at @s run summon minecraft:glow_squid ~ ~1 ~1'
+45召唤美西螈:
+    type: 'item'
+    chance: 1
+    material: 'salmon'
+    amount: 1
+    xp: 3
+    lore:
+       - '&6&l用于投喂美西螈的鱼儿'
+       - '&6&l怎么跑到这里来了?'
+    message: '&7&l(!) &a&l发现了一只美西螈 !'
+    commands:
+        - 'announcement:通告 (!) 某人收到了来自生命的祝福,有一只生灵在他/她身边诞生 !'
+        - 'execute as %player% at @s run summon minecraft:axolotl ~ ~1 ~'
+46海龟帽:
+    type: 'item'
+    chance: 0.7
+    material: 'turtle_helmet'
+    amount: 1
+    xp: 3
+    name: '&2&l绿帽子'
+    lore:
+       - '&d&l被染成绿色的帽子.'
+    enchantments:
+       - 'PROTECTION:3'
+    message: '&7&l(!) &a&l你获得了一顶绿帽子!'
+    treasure: true
+    commands:
+        - 'announcement:通告 (!) 某个人 获得了 绿帽子 !'
+47召唤蠹虫:
+    type: 'item'
+    chance: 2
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l虫子!'
+    commands:
+        - 'execute as %player% at @s run summon minecraft:silverfish ~ ~1 ~'
+48红色蘑菇:
+    type: 'item'
+    chance: 13
+    material: 'red_mushroom'
+    amount: 1
+    xp: 3
+49棕色蘑菇:
+    type: 'item'
+    chance: 13
+    material: 'brown_mushroom'
+    amount: 1
+    xp: 3
+50仙儿的玩具:
+    type: 'item'
+    chance: 0.3
+    material: 'end_rod'
+    amount: 1
+    xp: 3
+    name: '&b&l仙儿的玩具'
+    lore:
+       - '&6&l玩具?干嘛用的?'
+       - '&6&l怎么上面黏糊糊的?'
+    enchantments:
+        - 'power:10'
+    unbreakable: true
+    message: '&7&l(!) &a你找到了仙儿的玩具!'
+    treasure: true
+    commands:
+        - 'announcement:通告 (!) 某个人 找到了 一根? 棒子? 这是什么东西?'
+51小小希的甜言蜜语:
+    type: 'item'
+    chance: 0.2
+    material: 'honey_bottle'
+    amount: 1
+    xp: 3
+    name: '&b&l小小希的甜言蜜语'
+    lore:
+       - '&6&l来自小小希的精酿~'
+    message: '&7&l(!) &a你获得了来自小小希的甜言蜜语 小心敌人!'
+    treasure: true
+    commands:
+        - 'announcement:通告 (!) 某个人 获得了 来自小小希的甜言蜜语 但是 敌人来了!'
+        - 'effect give %player% saturation 120 2'
+        - 'effect give %player% luck 120 1'
+        - 'effect give %player% dolphins_grace 120 1'
+        - 'effect give %player% strength 120 1'
+        - 'effect give %player% regeneration 120 1'
+        - 'effect give %player% haste 120 1'
+        - 'effect give %player% weakness 60 2'
+        - 'effect give %player% bad_omen 600 5'
+52MJC的真传:
+    type: 'item'
+    chance: 0.3
+    material: 'experience_bottle'
+    amount: 1
+    xp: 3
+    name: '&b&lMJC的真传'
+    lore:
+       - '&6&lMJC的真传~'
+       - '&6&l使用即可获得~'
+    message: '&7&l(!) &a&l你获得了来自MJC的真传!'
+    treasure: true
+    commands:
+        - 'announcement:通告 (!) 某个人 获得了 来自MJC的真传!'
+        - 'effect give %player% hero_of_the_village 200 1'
+        - 'effect give %player% strength 100 1'
+53钓鱼竿:
+    type: 'item'
+    chance: 8
+    material: 'fishing_rod'
+    amount: 1
+    xp: 3
+    durability: '1-100'
+    bonus-enchantment-amount: 3
+    enchantments:
+        - 'mending:1:3'
+        - 'vanishing_curse:1:8'
+        - 'lure:1-3:10'
+        - 'luck_of_the_sea:1-3:10'
+        - 'unbreaking:1-3:20'
+54火把花种子:
+    type: 'item'
+    chance: 3
+    material: 'torchflower_seeds'
+    amount: 1
+    xp: 3
+    lore:
+       - '&c&l嗅探兽才能找到的种子!'
+       - '&c&l应该在沙子里,为什么在水里?'
+55瓶子草荚果:
+    type: 'item'
+    chance: 3
+    material: 'pitcher_pod'
+    amount: 1
+    xp: 3
+    lore:
+       - '&c&l嗅探兽才能找到的种子!'
+       - '&c&l应该在沙子里,为什么在水里?'
+56绯红菌:
+    type: 'item'
+    chance: 5
+    material: 'crimson_fungus'
+    amount: 1
+    xp: 3
+57诡异菌:
+    type: 'item'
+    chance: 5
+    material: 'warped_fungus'
+    amount: 1
+    xp: 3
+58迷之炖菜:
+    type: 'item'
+    chance: 12
+    material: 'suspicious_stew'
+    amount: 1
+    xp: 3
+    lore:
+       - '&c&l干了,兄弟们!'
+59漂流桶:
+    type: 'item'
+    chance: 2
+    material: 'barrel'
+    amount: 1
+    xp: 3
+    lore:
+       - '&c&l怎么有个木桶!'
+       - '&c&l是那艘船翻了吗?'
+60雕刻的南瓜头:
+    type: 'item'
+    chance: 2
+    material: 'carved_pumpkin'
+    amount: 1
+    xp: 3
+    lore:
+       - '&c&l谁的万圣节玩具!'
+61召唤青蛙:
+    type: 'item'
+    chance: 2
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l呱!'
+    commands:
+        - 'announcement:通告 (!) 钓鱼佬真的是除了鱼,什么都能钓到!'
+        - 'execute as %player% at @s run summon minecraft:frog ~ ~1 ~'
+62召唤蝌蚪:
+    type: 'item'
+    chance: 3
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l无声的生物!'
+    commands:
+        - 'announcement:通告 (!) 钓鱼佬真的是除了鱼,什么都能钓到!'
+        - 'execute as %player% at @s run summon minecraft:tadpole ~ ~1 ~'
+63召唤恼鬼:
+    type: 'item'
+    chance: 0.7
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l海洋的诅咒!'
+    treasure: true
+    commands:
+        - 'announcement:通告 (!) 有人触发了海洋的诅咒,有一只恼鬼诞生了!'
+        - 'execute as %player% at @s run summon minecraft:vex ~ ~1 ~'
+64召唤悦灵:
+    type: 'item'
+    chance: 0.4
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l海洋的祝福!'
+    treasure: true
+    commands:
+        - 'announcement:通告 (!) 有人触发了海洋的祝福,有一只悦灵诞生了!'
+        - 'execute as %player% at @s run summon minecraft:allay ~ ~1 ~'
+65船:
+    type: 'item'
+    chance: 0.5
+    material: 'oak_boat'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l啊?谁的船能飘到这啊?'
+    treasure: true
+    commands:
+        - 'announcement:通告 (!) 嘿! 谁的船落我这了!'
+66小小的药丸:
+    type: 'item'
+    chance: 0.9
+    material: 'crimson_button'
+    amount: 1
+    xp: 3
+    name: '&b&l小小的药丸'
+    lore:
+       - '&6&l以为是太上老君的灵丹妙药.'
+       - '&6&l结果是小小的搓的失败品.'
+    message: '&7&l(!) &a&l你找到了小小丢弃的药丸!'
+    treasure: true
+    commands:
+        - 'announcement:通告 (!) 某个人 找到了 小小丢弃的药丸... 有毒!'
+        - 'effect give %player% conduit_power 120 2'
+        - 'effect give %player% darkness 120 2'
+        - 'effect give %player% wither 120 2'
+        - 'effect give %player% nausea 120 2'
+        - 'effect give %player% slowness 120 2'
+        - 'effect give %player% hunger 120 2'
+        - 'effect give %player% blindness 120 2'
+        - 'effect give %player% mining_fatigue 120 2'
+        - 'effect give %player% weakness 120 2'
+        - 'effect give %player% poison 120 2'
