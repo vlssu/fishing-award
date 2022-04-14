@@ -3,7 +3,7 @@
 
 这是钓鱼插件的奖励演示插件，大家可以写好后通过
 
-使用[提交问题](https://gitlab.vlssu.com/vlssu/fishing-award/-/issues/new)来告诉我
+使用[提交问题（gitee）](https://gitee.com/vlssu/fishing-award/issues/new)来告诉我
 
 #### 目前已增加的条目
 | 名称 | 概率(总概率0.001) | 二次修改内容 | 提交链接(作者) |
@@ -14,3 +14,4 @@
 | 奇怪的木棍 | 500 | 概率改为0.05，附魔太高降低至3 | @"Acutely"#p57 |
 | 海洋的馈赠（时运5镐子） | 100 | 概率改为0.01，附魔太高降低至4 | @"Acutely"#p58 |
 | 龙蛋 | 1 | 直接通过 | @"LimD"#p59 |
+| 收纳袋 | 100 | 直接通过 | @"BURY"#p187 |
