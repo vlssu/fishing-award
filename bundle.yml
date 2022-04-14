@@ -26,10 +26,10 @@ items:
     chance: 100
     # 物品的自定义显示名称。
     # 如果空字符串没有自定义名称
-    item-name: 
+    item-name: "收纳袋"
     # 物品的说明。设置为 null 表示没有说明
     lore:
-      - null
+    - null
 
     # 该物品的数量
     amount: 1
@@ -39,7 +39,7 @@ items:
     model-data: 0
     # 附魔列表为"ENCHANT:LEVEL"。设置为 null 表示没有附魔
     enchants:
-      - null
+    - null
     # 如果该物品看起来像被施了魔法一样发光
     glowing: false
     # 如果物品是不可破坏
@@ -53,7 +53,7 @@ messages:
 
 # 捕获此奖励时向服务器广播的消息列表。
 broadcasts:
-  - null
+- null
 
 # 发送给玩家的标题。如果没有，请留空。
 title: "&a&l你找到了奖励"
@@ -76,8 +76,9 @@ vanilla-rewards: false
 exp-amount: "20 to 30"
 
 # 获得此奖励时播放的声音。 留着空则没有声音
-sound: 
+# sound: ENTITY_PLAYER_LEVELUP
 
+# 获得此奖励时播放的声音。 留着空则没有声音
 # 玩家能否找到此奖励的要求
 requirements:
   # 检查玩家是否有一定的权限
