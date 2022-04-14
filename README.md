@@ -3,7 +3,7 @@
 
 这是钓鱼插件的奖励演示插件，大家可以写好后通过
 
-使用[提交问题（gitee）](https://gitee.com/vlssu/fishing-award/issues/new)来告诉我
+使用[请求合并（gitee）](https://gitee.com/vlssu/fishing-award/new/rewards)来告诉我
 
 #### 目前已增加的条目
 | 名称 | 概率(总概率0.001) | 二次修改内容 | 提交链接(作者) |
