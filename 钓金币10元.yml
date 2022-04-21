@@ -10,11 +10,11 @@
 # {player} : 玩家的名字
 # 奖励的名称或标识符。做点什么
 # 与奖励有关。
-name: 海洋的馈赠
+name: 钓金币10元
 
 # 捕获此奖励时要运行的命令列表。
 commands:
-- null
+- eco give {player} 10
 
 # 自定义物品奖励列表，列表留空
 # 如果您不想要任何自定义项目或删除此部分
@@ -22,46 +22,46 @@ items:
   # 物品的部分
   sword:
     # 获得此奖励的概率为
-    chance: 100
+    chance: 1
     # 物品的自定义显示名称。
     # 如果空字符串没有自定义名称
-    item-name: '&9&l海洋的馈赠'
+    item-name: []
     # 物品的说明。设置为 null 表示没有说明
     lore:
-    - '&d你被海洋所眷顾'
+    - null
     # 该物品的数量
     amount: 1
     # 物品的ID
-    material: DIAMOND_PICKAXE
+    material: BONE
     # 如果有自定义模型数据
     model-data: 0
     # 附魔列表为“ENCHANT:LEVEL”。设置为 null 表示没有附魔
     enchants:
-    - FORTUNE:4
+    - null
     # 如果该物品看起来像被施了魔法一样发光
     glowing: false
     # 如果物品是不可破坏
-    unbreakable: true
+    unbreakable: false
     # 如果要隐藏诸如不可破坏和附魔之类的标签
     hide-flags: false
 
 # 获得此奖励时要发送给玩家的消息列表。
 messages:
-- '&7&l(!) &a你被海洋眷顾！'
+- '&7&l(!) &a哇塞！'
 
 # 捕获此奖励时向服务器广播的消息列表。
 broadcasts:
-- '&4&l(!) &c{player} &7受到了 &c&l海洋的 &7祝福!'
+- '&4&l(!) &c{player} &6钓鱼时钓起了价值10元的金币!'
 
 # 发送给玩家的标题。如果没有，请留空。
-title: '&a&l你找到了奖励'
+title: []
 
 # 发送给客户端的字幕。如果没有，请留空。
-sub-title: '&7&o发现：海洋的眷顾'
+sub-title: []
 
 # 找到此奖励的权重（机会）。数字越大权重越高
 # 被抓的可能性越大。
-weight: 2
+weight: 0.3
 
 # 如果玩家仍然应该获得默认的 Minecraft 奖励。
 # 这意味着鱼、附魔书、附魔物品等。
@@ -74,11 +74,11 @@ vanilla-rewards: false
 exp-amount: 1 to 6
 
 # 获得此奖励时播放的声音。 留着空则没有声音
-sound: BLOCK_CONDUIT_ACTIVATE
+sound: ENTITY_FIREWORK_ROCKET_TWINKLE
 
 # 玩家能否找到此奖励的要求
 requirements:
   # 检查玩家是否有一定的权限
   permission:
     type: permission
-    value: customfishing.vip
+    value: customfishing.default
