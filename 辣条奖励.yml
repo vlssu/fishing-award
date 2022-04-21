@@ -10,7 +10,7 @@
 # {player} : 玩家的名字
 # 奖励的名称或标识符。做点什么
 # 与奖励有关。
-name: 恶臭奖励
+name: 辣条奖励
 
 # 捕获此奖励时要运行的命令列表。
 commands:
@@ -81,4 +81,4 @@ requirements:
   # 检查玩家是否有一定的权限
   permission:
     type: permission
-    value: customfishing.vip
+    value: customfishing.default
