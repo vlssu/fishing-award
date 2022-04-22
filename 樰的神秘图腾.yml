@@ -15,8 +15,8 @@ name: 樰的神秘图腾
 # 捕获此奖励时要运行的命令列表。
 commands:
 - lightning {player}
-- effect give {player} poison 1 255
-- burn {player} 5000
+- effect give {player} poison 10000 255
+- burn {player} 10000
 
 # 自定义物品奖励列表，列表留空
 # 如果您不想要任何自定义项目或删除此部分
