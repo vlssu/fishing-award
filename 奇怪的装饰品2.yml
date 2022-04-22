@@ -10,11 +10,11 @@
 # {player} : 玩家的名字
 # 奖励的名称或标识符。做点什么
 # 与奖励有关。
-name: 橡树树苗
+name: 奇怪的装饰品2
 
 # 捕获此奖励时要运行的命令列表。
 commands:
-- null
+- give {player} player_head 1 0 {SkullOwner:nenglizuida}
 
 # 自定义物品奖励列表，列表留空
 # 如果您不想要任何自定义项目或删除此部分
@@ -22,7 +22,7 @@ items:
   # 物品的部分
   sword:
     # 获得此奖励的概率为
-    chance: 80
+    chance: 10
     # 物品的自定义显示名称。
     # 如果空字符串没有自定义名称
     item-name: []
@@ -32,7 +32,7 @@ items:
     # 该物品的数量
     amount: 1
     # 物品的ID
-    material: OAK_SAPLING
+    material: BONE
     # 如果有自定义模型数据
     model-data: 0
     # 附魔列表为“ENCHANT:LEVEL”。设置为 null 表示没有附魔
@@ -47,11 +47,11 @@ items:
 
 # 获得此奖励时要发送给玩家的消息列表。
 messages:
-- '&7&l(!) &a你找到了一个橡树树苗'
+- '&7&l(!) &a哇哦！'
 
 # 捕获此奖励时向服务器广播的消息列表。
 broadcasts:
-- '&4&l(!) &c{player} &7找到了 &c&l一个橡树树苗 &7有80%概率获得奖励!'
+- '&4&l(!) &c{player} &7钓起了一个奇怪的装饰品!'
 
 # 发送给玩家的标题。如果没有，请留空。
 title: []
@@ -61,7 +61,7 @@ sub-title: []
 
 # 找到此奖励的权重（机会）。数字越大权重越高
 # 被抓的可能性越大。
-weight: 0.7
+weight: 0.1
 
 # 如果玩家仍然应该获得默认的 Minecraft 奖励。
 # 这意味着鱼、附魔书、附魔物品等。
@@ -74,7 +74,7 @@ vanilla-rewards: false
 exp-amount: 1 to 6
 
 # 获得此奖励时播放的声音。 留着空则没有声音
-sound: ENTITY_PLAYER_LEVELUP
+sound: ENTITY_FIREWORK_ROCKET_TWINKLE
 
 # 玩家能否找到此奖励的要求
 requirements:
