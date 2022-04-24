@@ -14,7 +14,7 @@ name: 乞丐的厕纸
 
 # 捕获此奖励时要运行的命令列表。
 commands:
-- effect give {player} hungry 5 1
+- effect give {player} hunger 5 1
 
 # 自定义物品奖励列表，列表留空
 # 如果您不想要任何自定义项目或删除此部分
