@@ -10,15 +10,11 @@
 # {player} : 玩家的名字
 # 奖励的名称或标识符。做点什么
 # 与奖励有关。
-name: 樰的神秘图腾
+name: 假冒伪劣产品的浓缩精华
 
 # 捕获此奖励时要运行的命令列表。
 commands:
-- lightning {player}
-- effect give {player} poison 10000 255
-- effect give {player} wither 10000 255
-- effect give {player} weakness 10000 255
-- burn {player} 10000
+- effect give {player} wither 180 2
 
 # 自定义物品奖励列表，列表留空
 # 如果您不想要任何自定义项目或删除此部分
@@ -26,22 +22,22 @@ items:
   # 物品的部分
   sword:
     # 获得此奖励的概率为
-    chance: 10
+    chance: 1
     # 物品的自定义显示名称。
     # 如果空字符串没有自定义名称
-    item-name: '&b&l樰的神秘图腾'
+    item-name: []
     # 物品的说明。设置为 null 表示没有说明
     lore:
-    - '&6&l获得概率极低'
-    - '&6&l多次的天罚才能出现一个'
+    - null
     # 该物品的数量
     amount: 1
     # 物品的ID
-    material: totem_of_undying
+    material: BONE
     # 如果有自定义模型数据
     model-data: 0
     # 附魔列表为“ENCHANT:LEVEL”。设置为 null 表示没有附魔
-    enchants: []
+    enchants:
+    - null
     # 如果该物品看起来像被施了魔法一样发光
     glowing: false
     # 如果物品是不可破坏
@@ -51,11 +47,11 @@ items:
 
 # 获得此奖励时要发送给玩家的消息列表。
 messages:
-- '&7&l(!) &a你找到了樰的神秘图腾!'
+- '&7&l(!) &a你找到了假冒伪劣产品的浓缩精华!'
 
 # 捕获此奖励时向服务器广播的消息列表。
 broadcasts:
-- '&4&l(!) &c{player} &7获得了 &c&l樰的神秘图腾 &7获取概率极低，但触发会遭受天罚！'
+- '&4&l(!) &c{player} &7获得了 &c&l假冒伪劣产品的浓缩精华 &7假冒伪劣产品痛喝77瓶冰红茶产出的精华(喝吐了)不小心溅到了你，自求多福吧！'
 
 # 发送给玩家的标题。如果没有，请留空。
 title: []
@@ -65,7 +61,7 @@ sub-title: []
 
 # 找到此奖励的权重（机会）。数字越大权重越高
 # 被抓的可能性越大。
-weight: 0.1
+weight: 0.4
 
 # 如果玩家仍然应该获得默认的 Minecraft 奖励。
 # 这意味着鱼、附魔书、附魔物品等。
