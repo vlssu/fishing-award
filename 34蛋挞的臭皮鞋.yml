@@ -33,7 +33,7 @@ items:
     # 该物品的数量
     amount: 1
     # 物品的ID
-    material: Leather_Boots
+    material: leather_boots
     # 如果有自定义模型数据
     model-data: 0
     # 附魔列表为“ENCHANT:LEVEL”。设置为 null 表示没有附魔
