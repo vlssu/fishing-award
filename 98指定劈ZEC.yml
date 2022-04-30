@@ -15,6 +15,7 @@ name: 劈ZEC一次
 # 捕获此奖励时要运行的命令列表。
 commands:
 - lightning ZEC
+- eco give {player} 20
 
 # 自定义物品奖励列表，列表留空
 # 如果您不想要任何自定义项目或删除此部分
@@ -22,13 +23,13 @@ items:
   # 物品的部分
   sword:
     # 获得此奖励的概率为
-    chance: 1
+    chance: 100
     # 物品的自定义显示名称。
     # 如果空字符串没有自定义名称
-    item-name: []
+    item-name: '&6&lZEC的骨头'
     # 物品的说明。设置为 null 表示没有说明
     lore:
-    - null
+    - '&c&l被雷击碎的只剩下骨头了'
     # 该物品的数量
     amount: 1
     # 物品的ID
@@ -41,7 +42,7 @@ items:
     # 如果该物品看起来像被施了魔法一样发光
     glowing: false
     # 如果物品是不可破坏
-    unbreakable: false
+    unbreakable: true
     # 如果要隐藏诸如不可破坏和附魔之类的标签
     hide-flags: false
 
@@ -51,7 +52,7 @@ messages:
 
 # 捕获此奖励时向服务器广播的消息列表。
 broadcasts:
-- '&7&l(!) &a雷公助我！&6劈ZEC一次!'
+- '&4&l(!) &c{player} &7雷公助我！&6劈ZEC一次!'
 
 # 发送给玩家的标题。如果没有，请留空。
 title: []
