@@ -25,24 +25,24 @@ items:
     chance: 20
     # 物品的自定义显示名称。
     # 如果空字符串没有自定义名称
-    item-name: '&c&l樰的鲑鱼桶'
+    item-name: '&c&l樰的鲑鱼'
     # 物品的说明。设置为 null 表示没有说明
     lore:
     - '&6&l樰用来投喂美西螈的'
-    - '&6&l怎么遗落了呢？'
+    - '&6&l怎么跑到这里来了？'
     # 该物品的数量
     amount: 1
     # 物品的ID
-    material: salmon_bucket
+    material: salmon
     # 如果有自定义模型数据
     model-data: 0
     # 附魔列表为“ENCHANT:LEVEL”。设置为 null 表示没有附魔
     enchants:
     - null
     # 如果该物品看起来像被施了魔法一样发光
-    glowing: false
+    glowing: true
     # 如果物品是不可破坏
-    unbreakable: false
+    unbreakable: true
     # 如果要隐藏诸如不可破坏和附魔之类的标签
     hide-flags: false
 
