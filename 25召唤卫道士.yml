@@ -10,11 +10,11 @@
 # {player} : 玩家的名字
 # 奖励的名称或标识符。做点什么
 # 与奖励有关。
-name: 召唤掠夺者
+name: 召唤卫道士
 
 # 捕获此奖励时要运行的命令列表。
 commands:
-- execute as {player} at @s run summon minecraft:pillager ~ ~ ~
+- execute as {player} at @s run summon minecraft:vindicator ~ ~ ~
 
 # 自定义物品奖励列表，列表留空
 # 如果您不想要任何自定义项目或删除此部分
