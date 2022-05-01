@@ -15,7 +15,7 @@ name: 五一活动
 # 捕获此奖励时要运行的命令列表。
 commands:
 - give {player} player_head 1 0 {SkullOwner:{player}}
-- manuaddv {player} prefix &6&l[劳动最光荣]
+- manuaddv {player} prefix &6&l[钓鱼最光荣]&2
 
 # 自定义物品奖励列表，列表留空
 # 如果您不想要任何自定义项目或删除此部分
@@ -50,7 +50,7 @@ messages:
 
 # 捕获此奖励时向服务器广播的消息列表。
 broadcasts:
-- '&4&l(!) &c{player} &7找到了 &c&l五一奖励 &7劳动最光荣称号及自己的头颅!'
+- '&4&l(!) &c{player} &7找到了 &c&l五一奖励 &7钓鱼最光荣称号及自己的头颅!'
 
 # 发送给玩家的标题。如果没有，请留空。
 title: []
