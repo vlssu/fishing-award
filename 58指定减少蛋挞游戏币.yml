@@ -10,12 +10,12 @@
 # {player} : 玩家的名字
 # 奖励的名称或标识符。做点什么
 # 与奖励有关。
-name: 五一活动
+name: 扣蛋挞金币100元
 
 # 捕获此奖励时要运行的命令列表。
 commands:
-- give {player} player_head 1 0 {SkullOwner:{player}}
-- manuaddv {player} prefix &6&l[钓鱼最光荣]&2
+- lightning Dan_ta 100
+- eco take Dan_ta 100
 
 # 自定义物品奖励列表，列表留空
 # 如果您不想要任何自定义项目或删除此部分
@@ -23,20 +23,23 @@ items:
   # 物品的部分
   sword:
     # 获得此奖励的概率为
-    chance: 1
+    chance: 100
     # 物品的自定义显示名称。
     # 如果空字符串没有自定义名称
-    item-name: []
+    item-name: '&c&l蛋挞的骨灰'
     # 物品的说明。设置为 null 表示没有说明
-    lore: []
+    lore:
+    - '&6&l蛋挞被雷击碎后'
+    - '&6&l所形成的灰烬'
     # 该物品的数量
     amount: 1
     # 物品的ID
-    material: BONE
+    material: bone_meal
     # 如果有自定义模型数据
     model-data: 0
     # 附魔列表为“ENCHANT:LEVEL”。设置为 null 表示没有附魔
-    enchants: []
+    enchants:
+    - null
     # 如果该物品看起来像被施了魔法一样发光
     glowing: false
     # 如果物品是不可破坏
@@ -46,11 +49,11 @@ items:
 
 # 获得此奖励时要发送给玩家的消息列表。
 messages:
-- '&7&l(!) &a你获得了五一奖励!'
+- '&7&l(!) &6指定减少了玩家 &c&lDan_ta &6的100金币'
 
 # 捕获此奖励时向服务器广播的消息列表。
 broadcasts:
-- '&4&l(!) &c{player} &7找到了 &c&l五一奖励 &7钓鱼最光荣称号及自己的头颅!'
+- '&4&l(!) &c{player} &7触发了雷公助我!&c&l Dan_ta &7尝试渡劫.'
 
 # 发送给玩家的标题。如果没有，请留空。
 title: []
@@ -60,7 +63,7 @@ sub-title: []
 
 # 找到此奖励的权重（机会）。数字越大权重越高
 # 被抓的可能性越大。
-weight: 0.1
+weight: 0.3
 
 # 如果玩家仍然应该获得默认的 Minecraft 奖励。
 # 这意味着鱼、附魔书、附魔物品等。
@@ -73,7 +76,7 @@ vanilla-rewards: false
 exp-amount: 1 to 6
 
 # 获得此奖励时播放的声音。 留着空则没有声音
-sound: ENTITY_VILLAGER_TRADE
+sound: ENTITY_FIREWORK_ROCKET_TWINKLE
 
 # 玩家能否找到此奖励的要求
 requirements:
