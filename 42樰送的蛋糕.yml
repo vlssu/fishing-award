@@ -15,7 +15,7 @@ name: 樰的蛋糕
 # 捕获此奖励时要运行的命令列表。
 commands:
 - lightning {player}
-- effect give {player} bad_omen 1000 1
+- effect give {player} bad_omen 200 1
 
 # 自定义物品奖励列表，列表留空
 # 如果您不想要任何自定义项目或删除此部分
@@ -30,7 +30,7 @@ items:
     # 物品的说明。设置为 null 表示没有说明
     lore:
     - '&6&l樰送出的美味蛋糕'
-    - '&6&l或许可以用来换点小钱~'
+    - '&6&l似乎十分美味呢~'
     # 该物品的数量
     amount: 1
     # 物品的ID

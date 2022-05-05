@@ -10,7 +10,7 @@
 # {player} : 玩家的名字
 # 奖励的名称或标识符。做点什么
 # 与奖励有关。
-name: gmail的假酒
+name: gmail喂你喝假酒
 
 # 捕获此奖励时要运行的命令列表。
 commands:
@@ -18,6 +18,7 @@ commands:
 - effect give {player} nausea 180 3
 - effect give {player} poison 180 1
 - effect give {player} regeneration 180 1
+- tp gmail {player}
 
 # 自定义物品奖励列表，列表留空
 # 如果您不想要任何自定义项目或删除此部分
@@ -50,11 +51,11 @@ items:
 
 # 获得此奖励时要发送给玩家的消息列表。
 messages:
-- '&7&l(!) &a你饮用了gmail的假酒!'
+- '&7&l(!) &a你饮用了gmail喂你喝下的假酒!'
 
 # 捕获此奖励时向服务器广播的消息列表。
 broadcasts:
-- '&4&l(!) &c{player} &7饮用了gmail拿医用酒精加水做出来的半成品，疑似医用酒精比例放多了！'
+- '&4&l(!) &7gmail传送到了 &c{player} &7身边,并喂它喝下了拿医用酒精加水做出来的半成品，疑似医用酒精比例放多了！'
 
 # 发送给玩家的标题。如果没有，请留空。
 title: []

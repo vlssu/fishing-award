@@ -14,7 +14,7 @@ name: 奇怪的装饰品2
 
 # 捕获此奖励时要运行的命令列表。
 commands:
-- give {player} player_head 1 0 {SkullOwner:nenglizuida}
+- give {player} player_head 1 0 {SkullOwner:Bing_xin_233}
 
 # 自定义物品奖励列表，列表留空
 # 如果您不想要任何自定义项目或删除此部分
