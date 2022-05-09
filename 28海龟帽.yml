@@ -39,7 +39,7 @@ items:
     enchants:
     - PROTECTION:3
     # 如果该物品看起来像被施了魔法一样发光
-    glowing: true
+    glowing: false
     # 如果物品是不可破坏
     unbreakable: false
     # 如果要隐藏诸如不可破坏和附魔之类的标签
