@@ -1,11 +1,14 @@
 - [英文配置文件](./example/english.yml)
 - [中文配置文件](./example/chinese.yml)
+- [虚空生存的配置文件](./example/rewards.yml)
 
 这是钓鱼插件的奖励演示插件，大家可以写好后通过
 
 使用[请求合并（gitee）](https://gitee.com/vlssu/fishing-award/new/survival)来告诉我
 
 空岛服的用这个[请求合并（gitee）](https://gitee.com/vlssu/fishing-award/new/bskyblock)
+
+虚空生存的用这个[请求合并（gitee）](https://gitee.com/vlssu/fishing-award/new/void)
 
 #### 目前已增加的条目
 | 名称 | 概率(总概率0.001) | 二次修改内容 | 提交链接(作者) |
