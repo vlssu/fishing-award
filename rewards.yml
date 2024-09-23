@@ -1,11 +1,194 @@
-1召唤巨人:                       #名称
-    type: 'item'                #类型
-    chance: 1                   #概率
-    material: 'bone'            #物品
-    amount: 1                   #数量
-    xp: 3                       #经验
-    message: '&7&l(!) &a&l啊? 巨人 !'  #提示文本
-    commands:                         #执行命令
+# Define reward parameters here
+#
+########################### 关键词 ###########################
+#   chance:                         确定奖励下降的机会. 数值在 0.##-100. 注意：如果插件处于权重模式，这将用作权重.
+#   type:                           指定奖励类型. 'item' or 'entity'
+#   xp:                             指定奖励兑现时放弃的XP金额.
+#   commands:                       指定在奖励被引入时服务器运行的命令列表.
+#       - 'say 大捕获!'
+#   message:                        指定玩家在收到奖励时收到的消息.
+#   treasure:                       指定奖励机会是否因运气而增加. True or False.
+#   junk:                           指定奖励机会是否因运气而减少. True or false
+#   sound:                          指定当奖励被卷入时播放的声音. (id:volume:pitch)
+#
+########################### 项目关键字 ###########################
+#   material:                       使用Minecraft ID指定项目的类型。例子: 'LEATHER'
+#   amount:                         将掉落的物品数量设置为范围 (Min-Max) 或精确数量.
+#   lore:                           向项目添加工具提示。列表中的每一行都应该是单独的一行.
+#       - ''
+#   enchantments:                  为物品添加魔法。用冒号":"分隔的ID、等级和几率指定每个魔法。建议按从低到高的概率顺序排列魔法，因为它们将按列出的顺序应用.
+#       - 'protection:1-5:50'       示例：这意味着保护级别1-5有50%的机会被应用。将机会留空将保证获得魔法，任何未保证的魔法都将作为额外魔法使用.
+#   guaranteed-enchantment-amount:  确定项目可以具有的保证魔法数量。例如，如果一个物品有5个保证魔法，但数量设置为2，它将随机选择2个魔法并应用它们.
+#   bonus-enchantment-amount:       确定物品可以拥有的额外魔法数量。这仅适用于无保证的魔法.
+#   override-bonus-enchantments:    如果没有应用额外的魔法，则允许应用更多有保证的魔法. True/False
+#   durability:                     将项目的耐久性设置为百分比，可以是范围 (Min-Max) 或精确值.
+#   unbreakable:                    使物品坚不可摧. True/False
+#   consumed:                       指定是否应在取货时消费该物品. True/False.
+#   flags:                          指定奖励的项目标志列表
+#       - 'HIDE_ENCHANTS'
+#       - 'HIDE_ATTRIBUTES'
+#       - 'HIDE_UNBREAKABLE'
+#       - 'HIDE_DESTROYS'
+#       - 'HIDE_PLACED_ON'
+#       - 'HIDE_POTION_EFFECTS'
+#       - 'HIDE_DYE'
+#       - 'HIDE_ARMOR_TRIM'
+#
+#   attributes:                     指定Minecraft属性，后跟一个数值.
+#       health:                     generic.max_health
+#           value:                  Value of the attribute modifier
+#           operation:              如何增加价值。ADD_NUMBER/ADD_SCALER/MultipleY_SCALER_1-有关详细信息，请查看Spiget文档。
+#           equipment-slot:         指定属性修饰符应在其中生效的插槽。默认情况下为HEAD/CHEST/LEGS/FEET/HAND/OFF_HAND-HAND。
+#       knockback-resistance:       通用抗逆性
+#       speed:                      一般运动速度
+#       flying-speed:               一般飞行速度
+#       damage:                     一般攻击_图像
+#       attack-speed:               一般攻击速度
+#       armor:                      通用装甲
+#       armor-toughness:            通用装甲韧性
+#       luck:                       一般运气
+#       absorption:                 一般最大吸收
+#
+#   skull-url:                      根据配置文件url更改头骨项目的纹理。仅当材质为player_head时才有效
+#   skull-url: '2cdc81a313c58bef691ace59c733318bff37ac31909adc11325a4f563786ef82' - This value is my own skin's url
+#
+#   potion-effects:                 为物品添加药水效果。仅当材质为potion/splash_potion/lingering_poti时才有效
+#       - 'health_boost:1:30'       这将在1级增加30秒的健康提升效果. 'effect:level:time'
+#   potion-color: '255:255:255'     将药水的颜色设置为RGB值。
+#
+########################### 实体关键字 ###########################
+#   entity-type:                    指定Minecraft实体类型。例子： 'ZOMBIE'
+#   attributes:                     指定Minecraft实体属性，后跟一个数值。
+#       health:                     generic.max_health
+#       follow-range:               generic.follow_range
+#       knockback-resistance:       generic.knockback_resistance
+#       speed:                      generic.movement_speed
+#       flying-speed:               generic.flying_speed
+#       damage:                     generic.attack_damage
+#       attack-speed:               generic.attack_speed
+#       armor:                      generic.armor
+#       armor-toughness:            generic.armor_toughness
+#       luck:                       generic.luck
+#       absorption:                 generic.max_absorption (Isn't supported on spigot versions 1.20.1
+#       horse-jump:                 horse.jump_strength
+#       zombie-rienforcement:       zombie.spawn_rienforcements
+#   drops:                          实体被杀死时掉落的物品。
+#       NAME:
+#           material:               指定物品的Minecraft ID。
+#           amount:                 指定掉落项目的数量，可以是范围（最小-最大）或精确值。
+#           chance:                 指定项目掉落的可能性。
+#    equipment:                     设置实体的磨损设备。
+#       HEAD:
+#           material:
+#           enchantments:
+#               - ''
+#           drops:                  将磨损的设备添加到下拉列表中。
+#               damaged:            随机化跌落的耐久性. True or False.
+#               chance:             将项目掉落的百分比指定为数字。
+#       CHEST:
+#       LEGS:
+#       FEET:
+#       HAND:
+#       OFF_HAND:
+#
+########################### 条件 ###########################
+#   regions:                        Specify the World Guard region(s) a reward can be caught in
+#       - ''
+#   biomes:                         Specify the Biomes a reward can be caught in.
+#       - ''
+#   permission:                     Specify a player permission needed for a reward to be caught. Permissions with always be prefixed with "fishingrewards."
+#   time:                           Specify the time required for a reward can be caught in. Based on minecraft ticks.
+#   weather:                        Specify the weather conditions needed to catch a reward. Clear/Rain/Thunder
+#
+########################### 项目示例 ###########################
+# Example-Drop:
+#   type: 'item'
+#   chance: 100
+#   material: 'LEATHER'
+#   amount: '1-5'
+#   name: '&cExample Item'
+#   lore:
+#     - 'First line'
+#     - '&bSecond line'
+#   enchantments:
+#     - 'unbreaking:1-3:1'
+#   durability: '10-100'
+#   xp: '10'
+#   consumed: true
+#   message: 'WOAH! RARE DROP!'
+#   commands:
+#     - 'say %player% GOT A RARE DROP!'
+#     - 'warp RewardSpot %player%'
+#   regions:
+#     - 'HUB'
+#     - 'Area64'
+#   biomes:
+#     - 'jungle'
+#     - 'plains'
+#   permission: 'example_drop'
+#   weather: 'thunder'
+#   treasure: true
+#   sound: 'entity_experience_orb_pickup:0.5:0.1'
+#
+########################### 玩家头物品示例 ###########################
+# Money:
+#   type: 'item'
+#   chance: 100
+#   material: 'player_head'
+#   name: '&6MONEY'
+#   xp: '10'
+#   consumed: true
+#   commands:
+#       - 'eco add %player% 2500'
+#   skull-url: '9fd108383dfa5b02e86635609541520e4e158952d68c1c8f8f200ec7e88642d'
+#
+########################### Potion Example ###########################
+# GodPotion:
+#   type: 'item'
+#   chance: 100
+#   material: 'potion'
+#   name: '&4God Potion'
+#   potion-color: '127:0:255'
+#   potion-effects:
+#       - 'health_boost:5:600'
+#       - 'resistance:3:600'
+#       - 'fire_resistance:1:600'
+#
+########################### Entity Example ###########################
+# Speedy-Zombie:
+#   type: 'entity'
+#   entity-type: 'ZOMBIE'
+#   name: 'The Flash'
+#   attributes:
+#       health: 1
+#       speed: 10
+#   equipment:
+#       HEAD:
+#           material: 'LEATHER_HELMET'
+#       LEGS:
+#           material: 'DIAMOND_BOOTS'
+#           enchantments:
+#               - 'PROTECTION:5:100'
+#           drops:
+#               damaged: true
+#               chance: 100
+#   drops:
+#       ROTTEN_FLESH:
+#           amount: '1-10'
+#           chance: 100
+#       SUGAR:
+#           amount: '1-2'
+#           chance: 5.5
+#
+
+1召唤巨人:
+    type: 'item'
+    chance: 1
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l啊? 巨人 !'
+    commands:
         - 'announcement:通告 (!) 某个人 发现了一只 远古巨人 !'
         - 'execute as %player% at @s run summon minecraft:giant ~ ~1 ~1 {CustomName:"远古巨人"}'
 2黏糊糊的东西:
@@ -14,7 +197,7 @@
     material: 'seagrass'
     amount: 1
     xp: 3
-    lore:                       #文本
+    lore:
        - '&6&l摸起来黏糊糊的'
     message: '&7&l(!) &a&l鱼钩被黏糊糊的东西给缠住了'
 3鱼线断了:
@@ -37,13 +220,13 @@
     material: 'golden_sword'
     amount: 1
     xp: 3
-    name: '&6&l弑葵剑'          #物品名
+    name: '&6&l弑葵剑'
     lore:
        - '&c&l被你身边的行商羊驼(葵)吸引而来'
-    enchantments:              #附魔
+    enchantments:
        - 'SHARPNESS:10'
     message: '&7&l(!) &a&l葵！'
-    treasure: true             #运气加成
+    treasure: true
     commands:
         - 'announcement:通告 (!) 某个人 钓起了一只葵! 并且被赐予一把弑葵剑!'
         - 'execute as %player% at @s run summon minecraft:trader_llama ~ ~1 ~1 {CustomName:"葵"}'
@@ -706,3 +889,6 @@
         - 'effect give %player% mining_fatigue 120 2'
         - 'effect give %player% weakness 120 2'
         - 'effect give %player% poison 120 2'
+        - 'lightning %player%'
+        - 'lightning %player%'
+        - 'lightning %player%'
