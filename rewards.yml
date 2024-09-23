@@ -1,29 +1,29 @@
-# Define reward parameters here
+# 在此处定义奖励参数
 #
-########################### 关键词 ###########################
-#   chance:                         确定奖励下降的机会. 数值在 0.##-100. 注意：如果插件处于权重模式，这将用作权重.
-#   type:                           指定奖励类型. 'item' or 'entity'
-#   xp:                             指定奖励兑现时放弃的XP金额.
-#   commands:                       指定在奖励被引入时服务器运行的命令列表.
+########################### 关键字 ###########################
+#   chance:                         确定奖励掉落的几率。值应为 0.##-100。注意： 如果插件处于权重模式，则此插件将用作权重。
+#   type:                           指定奖励的类型。'item' 或 'entity'
+#   xp:                             指定获得奖励时掉落的 XP 数量。
+#   commands:                       指定在获得奖励时服务器运行的命令列表。
 #       - 'say 大捕获!'
-#   message:                        指定玩家在收到奖励时收到的消息.
-#   treasure:                       指定奖励机会是否因运气而增加. True or False.
-#   junk:                           指定奖励机会是否因运气而减少. True or false
-#   sound:                          指定当奖励被卷入时播放的声音. (id:volume:pitch)
+#   message:                        指定玩家在获得奖励时收到的消息。
+#   treasure:                       指定奖励几率是否因运气而增加。对或错。
+#   junk:                          指定奖励几率是否因运气而降低。对或错
+#   sound:                          指定在获得奖励时播放的声音. (id:volume:pitch)
 #
-########################### 项目关键字 ###########################
-#   material:                       使用Minecraft ID指定项目的类型。例子: 'LEATHER'
-#   amount:                         将掉落的物品数量设置为范围 (Min-Max) 或精确数量.
-#   lore:                           向项目添加工具提示。列表中的每一行都应该是单独的一行.
+########################### 项关键字  ###########################
+#   material:                       使用 Minecraft ID 指定物品的类型。示例： 'LEATHER'
+#   amount:                         设置掉落的物品数量，可以是范围 （Min-Max） 或确切数量
+#   lore:                           为项目添加工具提示。每个 lore 行都应该是列表中的单独行。
 #       - ''
-#   enchantments:                  为物品添加魔法。用冒号":"分隔的ID、等级和几率指定每个魔法。建议按从低到高的概率顺序排列魔法，因为它们将按列出的顺序应用.
-#       - 'protection:1-5:50'       示例：这意味着保护级别1-5有50%的机会被应用。将机会留空将保证获得魔法，任何未保证的魔法都将作为额外魔法使用.
-#   guaranteed-enchantment-amount:  确定项目可以具有的保证魔法数量。例如，如果一个物品有5个保证魔法，但数量设置为2，它将随机选择2个魔法并应用它们.
-#   bonus-enchantment-amount:       确定物品可以拥有的额外魔法数量。这仅适用于无保证的魔法.
-#   override-bonus-enchantments:    如果没有应用额外的魔法，则允许应用更多有保证的魔法. True/False
-#   durability:                     将项目的耐久性设置为百分比，可以是范围 (Min-Max) 或精确值.
-#   unbreakable:                    使物品坚不可摧. True/False
-#   consumed:                       指定是否应在取货时消费该物品. True/False.
+#   enchantments:                  为物品添加附魔。指定每个附魔的 ID、等级和几率，用冒号 “：” 分隔。建议按从最低到最高几率的顺序排列附魔，因为它们将按列出的顺序应用。
+#       - 'protection:1-5:50'       示例：这意味着保护级别 1-5 有 50% 的几率被应用。将机会留空将保证获得附魔，任何非保证的附魔都将作为额外附魔应用。
+#   guaranteed-enchantment-amount:    决定物品可以拥有的保证附魔数量。例如，如果一个物品有 5 个保证附魔，但数量设置为 2，它将随机选择 2 个附魔并应用它们。
+#   bonus-enchantment-amount:       决定物品可以拥有的额外附魔数量。这仅适用于非保证附魔。
+#   override-bonus-enchantments:     如果未应用额外附魔，则允许应用更多保证附魔。对/错
+#   durability:                     将项目的耐久度设置为百分比，可以是范围 （Min-Max） 或精确值。
+#   unbreakable:                    使项目牢不可破。对/错
+#   consumed:                       指定是否应在提取时消耗该物品。对/错。
 #   flags:                          指定奖励的项目标志列表
 #       - 'HIDE_ENCHANTS'
 #       - 'HIDE_ATTRIBUTES'
@@ -34,31 +34,31 @@
 #       - 'HIDE_DYE'
 #       - 'HIDE_ARMOR_TRIM'
 #
-#   attributes:                     指定Minecraft属性，后跟一个数值.
+#   attributes:                     指定 Minecraft 属性，后跟一个数值。
 #       health:                     generic.max_health
-#           value:                  Value of the attribute modifier
-#           operation:              如何增加价值。ADD_NUMBER/ADD_SCALER/MultipleY_SCALER_1-有关详细信息，请查看Spiget文档。
-#           equipment-slot:         指定属性修饰符应在其中生效的插槽。默认情况下为HEAD/CHEST/LEGS/FEET/HAND/OFF_HAND-HAND。
-#       knockback-resistance:       通用抗逆性
-#       speed:                      一般运动速度
-#       flying-speed:               一般飞行速度
-#       damage:                     一般攻击_图像
-#       attack-speed:               一般攻击速度
-#       armor:                      通用装甲
-#       armor-toughness:            通用装甲韧性
-#       luck:                       一般运气
-#       absorption:                 一般最大吸收
+#           value:                  属性修饰符的值
+#           operation:              值的添加方式。ADD_NUMBER/ADD_SCALER/MultipleY_SCALER_1-有关详细信息，请查看 Spigot 文档。
+#           equipment-slot:         指定属性修饰符应在哪个槽中生效。HEAD/CHEST/LEGS/FEET/HAND/OFF_HAND-HAND 是默认值。
+#       knockback-resistance:       generic.knockback_resistance
+#       speed:                      generic.movement_speed
+#       flying-speed:               generic.flying_speed
+#       damage:                     generic.attack_damage
+#       attack-speed:               generic.attack_speed
+#       armor:                      generic.armor
+#       armor-toughness:            generic.armor_toughness
+#       luck:                       generic.luck
+#       absorption:                 generic.max_absorption
 #
-#   skull-url:                      根据配置文件url更改头骨项目的纹理。仅当材质为player_head时才有效
-#   skull-url: '2cdc81a313c58bef691ace59c733318bff37ac31909adc11325a4f563786ef82' - This value is my own skin's url
+#   skull-url:                      根据配置文件 url 更改 skull 项目的纹理。仅当材质player_head时有效
+#   skull-url: '2cdc81a313c58bef691ace59c733318bff37ac31909adc11325a4f563786ef82' - 这个值是我自己皮肤的 url
 #
-#   potion-effects:                 为物品添加药水效果。仅当材质为potion/splash_potion/lingering_poti时才有效
-#       - 'health_boost:1:30'       这将在1级增加30秒的健康提升效果. 'effect:level:time'
-#   potion-color: '255:255:255'     将药水的颜色设置为RGB值。
+#   potion-effects:                 为物品添加药水效果。仅当材质是 potion/splash_potion/lingering_poti 时有效
+#       - 'health_boost:1:30'       在 1 级时增加了 30 秒的生命提升效果. 'effect:level:time'
+#   potion-color: '255:255:255'     将药水的颜色设置为 RGB 值。
 #
 ########################### 实体关键字 ###########################
-#   entity-type:                    指定Minecraft实体类型。例子： 'ZOMBIE'
-#   attributes:                     指定Minecraft实体属性，后跟一个数值。
+#   entity-type:                    指定 Minecraft 实体类型。示例： 'ZOMBIE'
+#   attributes:                     指定 Minecraft 实体属性，后跟一个数值。
 #       health:                     generic.max_health
 #       follow-range:               generic.follow_range
 #       knockback-resistance:       generic.knockback_resistance
@@ -69,22 +69,22 @@
 #       armor:                      generic.armor
 #       armor-toughness:            generic.armor_toughness
 #       luck:                       generic.luck
-#       absorption:                 generic.max_absorption (Isn't supported on spigot versions 1.20.1
+#       absorption:                 generic.max_absorption (在 spigot 版本 1.20.1 上不受支持
 #       horse-jump:                 horse.jump_strength
 #       zombie-rienforcement:       zombie.spawn_rienforcements
-#   drops:                          实体被杀死时掉落的物品。
+#   drops:                          当实体被杀死时掉落的物品。
 #       NAME:
-#           material:               指定物品的Minecraft ID。
-#           amount:                 指定掉落项目的数量，可以是范围（最小-最大）或精确值。
-#           chance:                 指定项目掉落的可能性。
+#           material:               指定项目的 Minecraft ID。
+#           amount:                 指定放置项目的数量，可以是范围 （Min-Max） 或精确值。
+#           chance:                 指定物品掉落的几率。
 #    equipment:                     设置实体的磨损设备。
 #       HEAD:
 #           material:
 #           enchantments:
 #               - ''
-#           drops:                  将磨损的设备添加到下拉列表中。
-#               damaged:            随机化跌落的耐久性. True or False.
-#               chance:             将项目掉落的百分比指定为数字。
+#           drops:                  将磨损的装备添加到掉落列表中。
+#               damaged:            随机化掉落物的耐久度。对或错。
+#               chance:             以数字形式指定项目掉落的百分比。
 #       CHEST:
 #       LEGS:
 #       FEET:
@@ -92,32 +92,32 @@
 #       OFF_HAND:
 #
 ########################### 条件 ###########################
-#   regions:                        Specify the World Guard region(s) a reward can be caught in
+#   regions:                        指定可以捕获奖励的 World Guard 区域
 #       - ''
-#   biomes:                         Specify the Biomes a reward can be caught in.
+#   biomes:                         指定奖励可以捕获的生物群系。
 #       - ''
-#   permission:                     Specify a player permission needed for a reward to be caught. Permissions with always be prefixed with "fishingrewards."
-#   time:                           Specify the time required for a reward can be caught in. Based on minecraft ticks.
-#   weather:                        Specify the weather conditions needed to catch a reward. Clear/Rain/Thunder
+#   permission:                     指定捕获奖励所需的玩家权限。权限始终以 “fishingrewards” 为前缀。
+#   time:                           指定奖励可以捕获所需的时间。基于 minecraft ticks。
+#   weather:                        指定获得奖励所需的天气条件 Clear/Rain/Thunder 晴/雨/雷
 #
-########################### 项目示例 ###########################
+########################### 项示例 ###########################
 # Example-Drop:
 #   type: 'item'
 #   chance: 100
 #   material: 'LEATHER'
 #   amount: '1-5'
-#   name: '&cExample Item'
+#   name: '&c示例项'
 #   lore:
-#     - 'First line'
-#     - '&bSecond line'
+#     - '第一行'
+#     - '&b第二行'
 #   enchantments:
 #     - 'unbreaking:1-3:1'
 #   durability: '10-100'
 #   xp: '10'
 #   consumed: true
-#   message: 'WOAH! RARE DROP!'
+#   message: '哇！稀有掉落！'
 #   commands:
-#     - 'say %player% GOT A RARE DROP!'
+#     - 'say %player% 获得了稀有掉落！'
 #     - 'warp RewardSpot %player%'
 #   regions:
 #     - 'HUB'
@@ -343,7 +343,7 @@
        - '&6&l里面好像只剩下口水了.'
     message: '&7&l(!) &a&l你找到了崽崽的奶瓶!'
     commands:
-        - 'announcement:通告 (!) 某个人 获得了 崽崽的奶瓶!'
+       - 'announcement:通告 (!) 某个人 获得了 崽崽的奶瓶!'
 21墨囊:
     type: 'item'
     chance: 16
@@ -377,13 +377,13 @@
     durability: '1-100'
     bonus-enchantment-amount: 3
     enchantments:
-        - 'infinity:1:3'
-        - 'mending:1:3'
-        - 'vanishing_curse:1:8'
-        - 'flame:1:10'
-        - 'punch:1-2:15'
-        - 'power:1-3:20'
-        - 'unbreaking:1-3:20'
+       - 'infinity:1:10'
+       - 'mending:1:10'
+       - 'vanishing_curse:1:15'
+       - 'flame:1:20'
+       - 'punch:1-2:25'
+       - 'power:1-3:30'
+       - 'unbreaking:1-3:40'
 26蛋挞的臭皮鞋:
     type: 'item'
     chance: 6
@@ -397,8 +397,8 @@
     durability: '1-100'
     message: '&7&l(!) &a&l你找到了蛋挞的臭皮鞋!'
     commands:
-        - 'announcement:通告 (!) 某个人 找到了一双 蛋挞的臭皮靴! 幸运精灵追随他/她500秒!'
-        - 'effect give %player% luck 500 1'
+       - 'announcement:通告 (!) 某个人 找到了一双 蛋挞的臭皮靴! 幸运精灵追随他/她500秒!'
+       - 'effect give %player% luck 500 1'
 27神奇的鸡蛋:
     type: 'item'
     chance: 20
@@ -428,9 +428,9 @@
     name: '&2&l来自商人的佣金'
     message: '&7&l(!) &a&l你看到了一个被追杀的商人!'
     commands:
-        - 'announcement:通告 (!) 某个人 发现了一名被追杀的 商人!'
-        - 'execute as %player% at @s run summon minecraft:wandering_trader ~ ~1 ~1'
-        - 'execute as %player% at @s run summon minecraft:husk ~ ~1 ~5'
+       - 'announcement:通告 (!) 某个人 发现了一名被追杀的 商人!'
+       - 'execute as %player% at @s run summon minecraft:wandering_trader ~ ~1 ~1'
+       - 'execute as %player% at @s run summon minecraft:husk ~ ~1 ~5'
 30师叔的短裤:
     type: 'item'
     chance: 0.4
@@ -439,15 +439,15 @@
     xp: 3
     name: '&b&l师叔的裤衩子'
     lore:
-        - '&6&l好像是师叔的裤衩子?'
-        - '&6&l裆部这是什么东西?'
+       - '&6&l好像是师叔的裤衩子?'
+       - '&6&l裆部这是什么东西?'
     unbreakable: true
     enchantments:
        - 'THORNS:1'
     message: '&7&l(!) &a&l你找到了师叔的裤衩子!'
     treasure: true
     commands:
-        - 'announcement:通告 (!) 某个人 找到了 师叔丢失的裤衩子!'
+       - 'announcement:通告 (!) 某个人 找到了 师叔丢失的裤衩子!'
 31能力的过期食品:
     type: 'item'
     chance: 2
@@ -456,12 +456,12 @@
     xp: 3
     name: '&b&l能力的过期食品'
     lore:
-        - '&6&l恶心的味道,'
-        - '&6&l闻着都难受.'
+       - '&6&l恶心的味道,'
+       - '&6&l闻着都难受.'
     message: '&7&l(!) &a&l你找到了能力的过期食品!'
     commands:
-        - 'announcement:通告 (!) 某个人 找到了 能力的过期食品 虚弱伴随着他/她!'
-        - 'effect give %player% weakness 100 2'
+       - 'announcement:通告 (!) 某个人 找到了 能力的过期食品 虚弱伴随着他/她!'
+       - 'effect give %player% weakness 100 2'
 32召唤小小:
     type: 'item'
     chance: 1
@@ -473,6 +473,7 @@
        - '&c&l忠诚 !'
        - '&c&l忠诚 !'
        - '&c&l重复三遍 !'
+    weather: 'rain'
     enchantments:
        - 'Loyalty:1'
     message: '&7&l(!) &a&l海王小小!'
@@ -481,7 +482,7 @@
         - 'execute as %player% at @s run summon minecraft:elder_guardian ~ ~1 ~1 {CustomName:"海王小小"}'
 33冰心的吞噬稿:
     type: 'item'
-    chance: 0.3
+    chance: 0.2
     material: 'golden_pickaxe'
     amount: 1
     xp: 3
@@ -489,12 +490,13 @@
     lore:
        - '&a&l冰心制作空置域时遗失的吞噬稿!'
     enchantments:
-       - 'EFFICIENCY:5'
+       - 'EFFICIENCY:10'
     unbreakable: true
     message: '&7&l(!) &a&l你找到了一把冰心的吞噬稿!'
     treasure: true
+    weather: 'Thunder'
     commands:
-        - 'announcement:通告 (!) 某个人 找到了 冰心的吞噬稿!'
+       - 'announcement:通告 (!) 某个人 找到了 冰心的吞噬稿!'
 34玖月的上衣:
     type: 'item'
     chance: 0.4
@@ -503,15 +505,15 @@
     xp: 3
     name: '&b&l玖月的上衣'
     lore:
-        - '&6&l玖月在水里洗澡时遗落的?'
-        - '&6&l胸前这是什么东西?'
+       - '&6&l玖月在水里洗澡时遗落的?'
+       - '&6&l胸前这是什么东西?'
     unbreakable: true
     enchantments:
        - 'THORNS:1'
     message: '&7&l(!) &a&l你找到了玖月的上衣!'
     treasure: true
     commands:
-        - 'announcement:通告 (!) 某个人 找到了 玖月丢失的上衣!'
+       - 'announcement:通告 (!) 某个人 找到了 玖月丢失的上衣!'
 35乞丐的厕纸:
     type: 'item'
     chance: 8
@@ -520,15 +522,15 @@
     xp: 3
     name: '&b&l乞丐的厕纸'
     lore:
-        - '&6&l一张纸，上面有几个数字,'
-        - '&6&l 114514.'
+       - '&6&l一张纸，上面有几个数字,'
+       - '&6&l 114514.'
     message: '&7&l(!) &a&l好臭! 什么东西!'
     commands:
-        - 'announcement:通告 (!) 某个人 获得了 乞丐的厕纸 呕!'
-        - 'effect give %player% hunger 5 1'
+       - 'announcement:通告 (!) 某个人 获得了 乞丐的厕纸 呕!'
+       - 'effect give %player% hunger 5 1'
 36师叔的牙签:
     type: 'item'
-    chance: 3
+    chance: 0.2
     material: 'stick'
     amount: 1
     xp: 3
@@ -536,11 +538,12 @@
     lore:
        - '&a师叔的牙签,物理的?'
     enchantments:
-       - 'KNOCKBACK:2'
+       - 'KNOCKBACK:10'
     unbreakable: true
+    weather: 'Thunder'
     message: '&7&l(!) &a&l你找到了一根师叔的牙签!'
     commands:
-        - 'announcement:通告 (!) 某个人 找到了 师叔的牙签 !'
+       - 'announcement:通告 (!) 某个人 找到了 师叔的牙签 !'
 37童童的理想乡:
     type: 'item'
     chance: 4
@@ -552,8 +555,9 @@
        - '&a童童自闭时所画'
        - '&a不知道是什么样子的呢?'
     message: '&7&l(!) &a&l你找到了一幅画!'
+    weather: 'Thunder'
     commands:
-        - 'announcement:通告 (!) 某个人 找到了 一幅画 !'
+       - 'announcement:通告 (!) 某个人 找到了 一幅画 !'
 38师叔的望远镜:
     type: 'item'
     chance: 0.2
@@ -568,7 +572,7 @@
     message: '&7&l(!) &a&l你找到了师叔的望远镜!'
     treasure: true
     commands:
-        - 'announcement:通告 (!) 某个人 找到了 师叔丢失的望远镜 !'
+       - 'announcement:通告 (!) 某个人 找到了 师叔丢失的望远镜 !'
 39奇怪的旗帜:
     type: 'item'
     chance: 5
@@ -581,7 +585,7 @@
        - '&6&l但还是能看出来是一群人在强迫一个人女装.'
     message: '&7&l(!) &a&l你找到了奇怪的旗帜!'
     commands:
-        - 'announcement:通告 (!) 某个人 找到了 奇怪的旗帜 !'
+       - 'announcement:通告 (!) 某个人 找到了 奇怪的旗帜 !'
 40假冒伪劣产品的浓缩精华:
     type: 'item'
     chance: 0.8
@@ -591,8 +595,8 @@
     message: '&7&l(!) &a&l你找到了假冒伪劣产品的浓缩精华!'
     treasure: true
     commands:
-        - 'announcement:通告 (!) 某个人 看到假冒伪劣产品痛喝77瓶冰红茶产出的精华(喝吐了)并且不小心溅到了你,自求多福吧!'
-        - 'effect give %player% wither 180 2'
+       - 'announcement:通告 (!) 某个人 看到假冒伪劣产品痛喝77瓶冰红茶产出的精华(喝吐了)并且不小心溅到了你,自求多福吧!'
+       - 'effect give %player% wither 180 2'
 41gmail喂你喝假酒:
     type: 'item'
     chance: 0.8
@@ -602,14 +606,14 @@
     message: '&7&l(!) &a&l你饮用了gmail的假酒!'
     treasure: true
     commands:
-        - 'announcement:通告 (!) 某个人 喝下了 gmail酿造的假酒!'
-        - 'effect give %player% wither 180 3'
-        - 'effect give %player% nausea 180 3'
-        - 'effect give %player% poison 180 1'
-        - 'effect give %player% regeneration 180 1'
+       - 'announcement:通告 (!) 某个人 喝下了 gmail酿造的假酒!'
+       - 'effect give %player% wither 180 3'
+       - 'effect give %player% nausea 180 3'
+       - 'effect give %player% poison 180 1'
+       - 'effect give %player% regeneration 180 1'
 42樰的美味蛋糕:
     type: 'item'
-    chance: 0.3
+    chance: 1
     material: 'cake'
     amount: 1
     xp: 3
@@ -618,17 +622,19 @@
        - '&6&l樰送出的美味蛋糕'
        - '&6&l似乎十分美味呢~'
     message: '&7&l(!) &a&l你找到了樰送出的蛋糕!'
+    weather: 'Thunder'
     treasure: true
     commands:
-        - 'announcement:通告 (!) 获得了 樰的蛋糕 但它吸引了掠夺者的注意,他们来了 !'
-        - 'lightning %player%'
-        - 'effect give %player% bad_omen 200 1'
+       - 'announcement:通告 (!) 获得了 樰的蛋糕 但它吸引了掠夺者的注意,他们来了 !'
+       - 'lightning %player%'
+       - 'effect give %player% bad_omen 200 1'
 43召唤鱿鱼:
     type: 'item'
     chance: 16
     material: 'bone'
     amount: 1
     xp: 3
+    weather: 'rain'
     message: '&7&l(!) &a&l鱿鱼 !'
     commands:
         - 'execute as %player% at @s run summon minecraft:squid ~ ~1 ~1'
@@ -638,9 +644,10 @@
     material: 'bone'
     amount: 1
     xp: 3
+    weather: 'rain'
     message: '&7&l(!) &a&l发光鱿鱼 !'
     commands:
-        - 'execute as %player% at @s run summon minecraft:glow_squid ~ ~1 ~1'
+       - 'execute as %player% at @s run summon minecraft:glow_squid ~ ~1 ~1'
 45召唤美西螈:
     type: 'item'
     chance: 1
@@ -652,8 +659,8 @@
        - '&6&l怎么跑到这里来了?'
     message: '&7&l(!) &a&l发现了一只美西螈 !'
     commands:
-        - 'announcement:通告 (!) 某人收到了来自生命的祝福,有一只生灵在他/她身边诞生 !'
-        - 'execute as %player% at @s run summon minecraft:axolotl ~ ~1 ~'
+       - 'announcement:通告 (!) 某人收到了来自生命的祝福,有一只生灵在他/她身边诞生 !'
+       - 'execute as %player% at @s run summon minecraft:axolotl ~ ~1 ~'
 46海龟帽:
     type: 'item'
     chance: 0.7
@@ -665,10 +672,11 @@
        - '&d&l被染成绿色的帽子.'
     enchantments:
        - 'PROTECTION:3'
+    weather: 'rain'
     message: '&7&l(!) &a&l你获得了一顶绿帽子!'
     treasure: true
     commands:
-        - 'announcement:通告 (!) 某个人 获得了 绿帽子 !'
+       - 'announcement:通告 (!) 某个人 获得了 绿帽子 !'
 47召唤蠹虫:
     type: 'item'
     chance: 2
@@ -677,7 +685,7 @@
     xp: 3
     message: '&7&l(!) &a&l虫子!'
     commands:
-        - 'execute as %player% at @s run summon minecraft:silverfish ~ ~1 ~'
+       - 'execute as %player% at @s run summon minecraft:silverfish ~ ~1 ~'
 48红色蘑菇:
     type: 'item'
     chance: 13
@@ -701,12 +709,12 @@
        - '&6&l玩具?干嘛用的?'
        - '&6&l怎么上面黏糊糊的?'
     enchantments:
-        - 'power:10'
+       - 'power:10'
     unbreakable: true
     message: '&7&l(!) &a你找到了仙儿的玩具!'
     treasure: true
     commands:
-        - 'announcement:通告 (!) 某个人 找到了 一根? 棒子? 这是什么东西?'
+       - 'announcement:通告 (!) 某个人 找到了 一根? 棒子? 这是什么东西?'
 51小小希的甜言蜜语:
     type: 'item'
     chance: 0.2
@@ -719,15 +727,15 @@
     message: '&7&l(!) &a你获得了来自小小希的甜言蜜语 小心敌人!'
     treasure: true
     commands:
-        - 'announcement:通告 (!) 某个人 获得了 来自小小希的甜言蜜语 但是 敌人来了!'
-        - 'effect give %player% saturation 120 2'
-        - 'effect give %player% luck 120 1'
-        - 'effect give %player% dolphins_grace 120 1'
-        - 'effect give %player% strength 120 1'
-        - 'effect give %player% regeneration 120 1'
-        - 'effect give %player% haste 120 1'
-        - 'effect give %player% weakness 60 2'
-        - 'effect give %player% bad_omen 600 5'
+       - 'announcement:通告 (!) 某个人 获得了 来自小小希的甜言蜜语 但是 敌人来了!'
+       - 'effect give %player% saturation 120 2'
+       - 'effect give %player% luck 120 1'
+       - 'effect give %player% dolphins_grace 120 1'
+       - 'effect give %player% strength 120 1'
+       - 'effect give %player% regeneration 120 1'
+       - 'effect give %player% haste 120 1'
+       - 'effect give %player% weakness 60 2'
+       - 'effect give %player% bad_omen 600 5'
 52MJC的真传:
     type: 'item'
     chance: 0.3
@@ -741,9 +749,9 @@
     message: '&7&l(!) &a&l你获得了来自MJC的真传!'
     treasure: true
     commands:
-        - 'announcement:通告 (!) 某个人 获得了 来自MJC的真传!'
-        - 'effect give %player% hero_of_the_village 200 1'
-        - 'effect give %player% strength 100 1'
+       - 'announcement:通告 (!) 某个人 获得了 来自MJC的真传!'
+       - 'effect give %player% hero_of_the_village 200 1'
+       - 'effect give %player% strength 100 1'
 53钓鱼竿:
     type: 'item'
     chance: 8
@@ -753,11 +761,11 @@
     durability: '1-100'
     bonus-enchantment-amount: 3
     enchantments:
-        - 'mending:1:3'
-        - 'vanishing_curse:1:8'
-        - 'lure:1-3:10'
-        - 'luck_of_the_sea:1-3:10'
-        - 'unbreaking:1-3:20'
+       - 'mending:1:10'
+       - 'vanishing_curse:1:15'
+       - 'lure:1-3:20'
+       - 'luck_of_the_sea:1-3:25'
+       - 'unbreaking:1-3:40'
 54火把花种子:
     type: 'item'
     chance: 3
@@ -811,6 +819,7 @@
     material: 'carved_pumpkin'
     amount: 1
     xp: 3
+    weather: 'Thunder'
     lore:
        - '&c&l谁的万圣节玩具!'
 61召唤青蛙:
@@ -819,20 +828,22 @@
     material: 'bone'
     amount: 1
     xp: 3
+    weather: 'rain'
     message: '&7&l(!) &a&l呱!'
     commands:
-        - 'announcement:通告 (!) 钓鱼佬真的是除了鱼,什么都能钓到!'
-        - 'execute as %player% at @s run summon minecraft:frog ~ ~1 ~'
+       - 'announcement:通告 (!) 钓鱼佬真的是除了鱼,什么都能钓到!'
+       - 'execute as %player% at @s run summon minecraft:frog ~ ~1 ~'
 62召唤蝌蚪:
     type: 'item'
     chance: 3
     material: 'bone'
     amount: 1
     xp: 3
+    weather: 'rain'
     message: '&7&l(!) &a&l无声的生物!'
     commands:
-        - 'announcement:通告 (!) 钓鱼佬真的是除了鱼,什么都能钓到!'
-        - 'execute as %player% at @s run summon minecraft:tadpole ~ ~1 ~'
+       - 'announcement:通告 (!) 钓鱼佬真的是除了鱼,什么都能钓到!'
+       - 'execute as %player% at @s run summon minecraft:tadpole ~ ~1 ~'
 63召唤恼鬼:
     type: 'item'
     chance: 0.7
@@ -842,8 +853,8 @@
     message: '&7&l(!) &a&l海洋的诅咒!'
     treasure: true
     commands:
-        - 'announcement:通告 (!) 有人触发了海洋的诅咒,有一只恼鬼诞生了!'
-        - 'execute as %player% at @s run summon minecraft:vex ~ ~1 ~'
+       - 'announcement:通告 (!) 有人触发了海洋的诅咒,有一只恼鬼诞生了!'
+       - 'execute as %player% at @s run summon minecraft:vex ~ ~1 ~'
 64召唤悦灵:
     type: 'item'
     chance: 0.4
@@ -853,8 +864,8 @@
     message: '&7&l(!) &a&l海洋的祝福!'
     treasure: true
     commands:
-        - 'announcement:通告 (!) 有人触发了海洋的祝福,有一只悦灵诞生了!'
-        - 'execute as %player% at @s run summon minecraft:allay ~ ~1 ~'
+       - 'announcement:通告 (!) 有人触发了海洋的祝福,有一只悦灵诞生了!'
+       - 'execute as %player% at @s run summon minecraft:allay ~ ~1 ~'
 65船:
     type: 'item'
     chance: 0.5
@@ -864,10 +875,10 @@
     message: '&7&l(!) &a&l啊?谁的船能飘到这啊?'
     treasure: true
     commands:
-        - 'announcement:通告 (!) 嘿! 谁的船落我这了!'
+       - 'announcement:通告 (!) 嘿! 谁的船落我这了!'
 66小小的药丸:
     type: 'item'
-    chance: 0.9
+    chance: 2
     material: 'crimson_button'
     amount: 1
     xp: 3
@@ -876,19 +887,20 @@
        - '&6&l以为是太上老君的灵丹妙药.'
        - '&6&l结果是小小的搓的失败品.'
     message: '&7&l(!) &a&l你找到了小小丢弃的药丸!'
+    weather: 'Thunder'
     treasure: true
     commands:
-        - 'announcement:通告 (!) 某个人 找到了 小小丢弃的药丸... 有毒!'
-        - 'effect give %player% conduit_power 120 2'
-        - 'effect give %player% darkness 120 2'
-        - 'effect give %player% wither 120 2'
-        - 'effect give %player% nausea 120 2'
-        - 'effect give %player% slowness 120 2'
-        - 'effect give %player% hunger 120 2'
-        - 'effect give %player% blindness 120 2'
-        - 'effect give %player% mining_fatigue 120 2'
-        - 'effect give %player% weakness 120 2'
-        - 'effect give %player% poison 120 2'
-        - 'lightning %player%'
-        - 'lightning %player%'
-        - 'lightning %player%'
+       - 'announcement:通告 (!) 某个人 找到了 小小丢弃的药丸... 有毒!'
+       - 'effect give %player% conduit_power 120 2'
+       - 'effect give %player% darkness 120 2'
+       - 'effect give %player% wither 120 2'
+       - 'effect give %player% nausea 120 2'
+       - 'effect give %player% slowness 120 2'
+       - 'effect give %player% hunger 120 2'
+       - 'effect give %player% blindness 120 2'
+       - 'effect give %player% mining_fatigue 120 2'
+       - 'effect give %player% weakness 120 2'
+       - 'effect give %player% poison 120 2'
+       - 'lightning %player%'
+       - 'lightning %player%'
+       - 'lightning %player%'
