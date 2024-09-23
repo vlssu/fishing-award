@@ -473,7 +473,6 @@
        - '&c&l忠诚 !'
        - '&c&l忠诚 !'
        - '&c&l重复三遍 !'
-    weather: 'rain'
     enchantments:
        - 'Loyalty:1'
     message: '&7&l(!) &a&l海王小小!'
@@ -482,7 +481,7 @@
         - 'execute as %player% at @s run summon minecraft:elder_guardian ~ ~1 ~1 {CustomName:"海王小小"}'
 33冰心的吞噬稿:
     type: 'item'
-    chance: 0.2
+    chance: 0.1
     material: 'golden_pickaxe'
     amount: 1
     xp: 3
@@ -494,7 +493,6 @@
     unbreakable: true
     message: '&7&l(!) &a&l你找到了一把冰心的吞噬稿!'
     treasure: true
-    weather: 'Thunder'
     commands:
        - 'announcement:通告 (!) 某个人 找到了 冰心的吞噬稿!'
 34玖月的上衣:
@@ -530,7 +528,7 @@
        - 'effect give %player% hunger 5 1'
 36师叔的牙签:
     type: 'item'
-    chance: 0.2
+    chance: 0.1
     material: 'stick'
     amount: 1
     xp: 3
@@ -540,7 +538,6 @@
     enchantments:
        - 'KNOCKBACK:10'
     unbreakable: true
-    weather: 'Thunder'
     message: '&7&l(!) &a&l你找到了一根师叔的牙签!'
     commands:
        - 'announcement:通告 (!) 某个人 找到了 师叔的牙签 !'
@@ -555,7 +552,6 @@
        - '&a童童自闭时所画'
        - '&a不知道是什么样子的呢?'
     message: '&7&l(!) &a&l你找到了一幅画!'
-    weather: 'Thunder'
     commands:
        - 'announcement:通告 (!) 某个人 找到了 一幅画 !'
 38师叔的望远镜:
@@ -613,7 +609,7 @@
        - 'effect give %player% regeneration 180 1'
 42樰的美味蛋糕:
     type: 'item'
-    chance: 1
+    chance: 0.3
     material: 'cake'
     amount: 1
     xp: 3
@@ -622,7 +618,6 @@
        - '&6&l樰送出的美味蛋糕'
        - '&6&l似乎十分美味呢~'
     message: '&7&l(!) &a&l你找到了樰送出的蛋糕!'
-    weather: 'Thunder'
     treasure: true
     commands:
        - 'announcement:通告 (!) 获得了 樰的蛋糕 但它吸引了掠夺者的注意,他们来了 !'
@@ -634,7 +629,6 @@
     material: 'bone'
     amount: 1
     xp: 3
-    weather: 'rain'
     message: '&7&l(!) &a&l鱿鱼 !'
     commands:
         - 'execute as %player% at @s run summon minecraft:squid ~ ~1 ~1'
@@ -644,7 +638,6 @@
     material: 'bone'
     amount: 1
     xp: 3
-    weather: 'rain'
     message: '&7&l(!) &a&l发光鱿鱼 !'
     commands:
        - 'execute as %player% at @s run summon minecraft:glow_squid ~ ~1 ~1'
@@ -672,7 +665,6 @@
        - '&d&l被染成绿色的帽子.'
     enchantments:
        - 'PROTECTION:3'
-    weather: 'rain'
     message: '&7&l(!) &a&l你获得了一顶绿帽子!'
     treasure: true
     commands:
@@ -819,7 +811,6 @@
     material: 'carved_pumpkin'
     amount: 1
     xp: 3
-    weather: 'Thunder'
     lore:
        - '&c&l谁的万圣节玩具!'
 61召唤青蛙:
@@ -828,7 +819,6 @@
     material: 'bone'
     amount: 1
     xp: 3
-    weather: 'rain'
     message: '&7&l(!) &a&l呱!'
     commands:
        - 'announcement:通告 (!) 钓鱼佬真的是除了鱼,什么都能钓到!'
@@ -839,7 +829,6 @@
     material: 'bone'
     amount: 1
     xp: 3
-    weather: 'rain'
     message: '&7&l(!) &a&l无声的生物!'
     commands:
        - 'announcement:通告 (!) 钓鱼佬真的是除了鱼,什么都能钓到!'
@@ -878,7 +867,7 @@
        - 'announcement:通告 (!) 嘿! 谁的船落我这了!'
 66小小的药丸:
     type: 'item'
-    chance: 2
+    chance: 0.8
     material: 'crimson_button'
     amount: 1
     xp: 3
@@ -887,7 +876,6 @@
        - '&6&l以为是太上老君的灵丹妙药.'
        - '&6&l结果是小小的搓的失败品.'
     message: '&7&l(!) &a&l你找到了小小丢弃的药丸!'
-    weather: 'Thunder'
     treasure: true
     commands:
        - 'announcement:通告 (!) 某个人 找到了 小小丢弃的药丸... 有毒!'
