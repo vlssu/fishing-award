@@ -183,11 +183,12 @@
 
 1召唤巨人:
     type: 'item'
-    chance: 1
+    chance: 2
     material: 'bone'
     amount: 1
     xp: 3
     message: '&7&l(!) &a&l啊? 巨人 !'
+    treasure: true
     commands:
         - 'announcement:通告 (!) 某个人 发现了一只 远古巨人 !'
         - 'execute as %player% at @s run summon minecraft:giant ~ ~1 ~1 {CustomName:"远古巨人"}'
@@ -234,21 +235,23 @@
        - 'effect give %player% conduit_power 180 1'
 6召唤杀手兔砸:
     type: 'item'
-    chance: 1
+    chance: 2
     material: 'bone'
     amount: 1
     xp: 3
     message: '&7&l(!) &a&l召唤! 杀手兔砸 !'
+    treasure: true
     commands:
         - 'announcement:通告 (!) 某个人 钓起了一只 杀手兔砸!'
         - 'execute as %player% at @s run summon minecraft:rabbit ~ ~1 ~1 {RabbitType:99,CustomName:"杀手兔砸"}'
 7召唤掠夺者:
     type: 'item'
-    chance: 1
+    chance: 2
     material: 'bone'
     amount: 1
     xp: 3
     message: '&7&l(!) &a&l召唤! 掠夺者 !'
+    treasure: true
     commands:
         - 'announcement:通告 (!) 某个人 钓起了一只 掠夺者!'
         - 'execute as %player% at @s run summon minecraft:pillager ~ ~1 ~1'
@@ -366,7 +369,7 @@
     xp: 3
 24鹦鹉螺壳:
     type: 'item'
-    chance: 8
+    chance: 6
     material: 'nautilus_shell'
     amount: 1
     xp: 3
@@ -429,6 +432,7 @@
     xp: 3
     name: '&2&l来自商人的佣金'
     message: '&7&l(!) &a&l你看到了一个被追杀的商人!'
+    treasure: true
     commands:
        - 'announcement:通告 (!) 某个人 发现了一名被追杀的 商人!'
        - 'execute as %player% at @s run summon minecraft:wandering_trader ~ ~1 ~1'
@@ -466,7 +470,7 @@
        - 'effect give %player% weakness 100 2'
 32召唤小小:
     type: 'item'
-    chance: 1
+    chance: 0.9
     material: 'trident'
     amount: 1
     xp: 3
@@ -478,6 +482,7 @@
     enchantments:
        - 'Loyalty:1'
     message: '&7&l(!) &a&l海王小小!'
+    treasure: true
     commands:
         - 'announcement:通告 (!) 某个人 发现了 海王小小!'
         - 'execute as %player% at @s run summon minecraft:elder_guardian ~ ~1 ~1 {CustomName:"海王小小"}'
@@ -632,6 +637,7 @@
     amount: 1
     xp: 3
     message: '&7&l(!) &a&l鱿鱼 !'
+    treasure: true
     commands:
         - 'execute as %player% at @s run summon minecraft:squid ~ ~1 ~1'
 44召唤发光鱿鱼:
@@ -641,6 +647,7 @@
     amount: 1
     xp: 3
     message: '&7&l(!) &a&l发光鱿鱼 !'
+    treasure: true
     commands:
        - 'execute as %player% at @s run summon minecraft:glow_squid ~ ~1 ~1'
 45召唤美西螈:
@@ -653,6 +660,7 @@
        - '&6&l用于投喂美西螈的鱼儿'
        - '&6&l怎么跑到这里来了?'
     message: '&7&l(!) &a&l发现了一只美西螈 !'
+    treasure: true
     commands:
        - 'announcement:通告 (!) 某人收到了来自生命的祝福,有一只生灵在他/她身边诞生 !'
        - 'execute as %player% at @s run summon minecraft:axolotl ~ ~1 ~'
@@ -678,6 +686,7 @@
     amount: 1
     xp: 3
     message: '&7&l(!) &a&l虫子!'
+    treasure: true
     commands:
        - 'execute as %player% at @s run summon minecraft:silverfish ~ ~1 ~'
 48红色蘑菇:
@@ -822,6 +831,7 @@
     amount: 1
     xp: 3
     message: '&7&l(!) &a&l呱!'
+    treasure: true
     commands:
        - 'announcement:通告 (!) 钓鱼佬真的是除了鱼,什么都能钓到!'
        - 'execute as %player% at @s run summon minecraft:frog ~ ~1 ~'
@@ -832,6 +842,7 @@
     amount: 1
     xp: 3
     message: '&7&l(!) &a&l无声的生物!'
+    treasure: true
     commands:
        - 'announcement:通告 (!) 钓鱼佬真的是除了鱼,什么都能钓到!'
        - 'execute as %player% at @s run summon minecraft:tadpole ~ ~1 ~'
