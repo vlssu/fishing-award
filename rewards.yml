@@ -983,3 +983,18 @@
     commands:
        - 'announcement:通告 (!) 某个人的身边 出现了肝帝的头颅 掰下来 拿去拜拜~'
        - 'execute as %player% at @s run setblock ~ ~2 ~ minecraft:player_head[rotation=0]{profile:"mioyi"}'   #待定 先预写一个
+73幸运女神降临:
+    type: 'item'
+    chance: 0.5
+    material: 'amethyst_shard'
+    amount: 1
+    xp: 10
+    name: '&b&l女神的幸运水晶'
+    lore:
+       - '&6&l幸运女神降临时的副产物.'
+       - '&6&l幸运10的幸福.'
+    message: '&7&l(!) &a&l幸运女神眷顾了你！'
+    treasure: true
+    commands:
+       - 'announcement:通告 (!) 幸运女神在微笑~'
+       - 'effect give nenglizuida luck 600 9'
