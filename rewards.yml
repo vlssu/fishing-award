@@ -214,15 +214,15 @@
     amount: 1
     xp: 3
     message: '&7&l(!) &a&l被不知名的力量拉入水中，浮起来时获得了 一个海带'
-5召唤葵:
+5葵的钓鱼竿:
     type: 'item'
     chance: 0.1
     material: 'fishing_rod'
     amount: 1
     xp: 3
-    name: '&6&l钓葵竿'
+    name: '&6&l葵的钓鱼竿'
     lore:
-       - '&c&l史莱姆王被吸引而来'
+       - '&c&l葵为了度过难熬的夜晚所造.'
        - '&c&l神竿诞生了.'
     enchantments:
        - 'lure:5'
@@ -230,8 +230,7 @@
     message: '&7&l(!) &a&l神竿降临！'
     treasure: true
     commands:
-       - 'announcement:通告 (!) 某个人 找到了一把神竿,一只史莱姆王被召唤而来!'
-       - 'execute as %player% at @s run summon minecraft:slime ~ ~5 ~5 {Size:30,CustomName:"史莱姆王(葵)"}'
+       - 'announcement:通告 (!) 某个人 找到了 葵的钓鱼竿 神竿降世!'
        - 'effect give %player% conduit_power 180 1'
 6召唤杀手兔砸:
     type: 'item'
@@ -895,3 +894,37 @@
        - 'lightning %player%'
        - 'lightning %player%'
        - 'lightning %player%'
+67嗅探兽的蛋:
+    type: 'item'
+    chance: 0.2
+    material: 'sniffer_egg'
+    amount: 1
+    xp: 3
+    name: '&b&l远古生物的蛋'
+    lore:
+       - '&6&l貌似是上古生物的蛋.'
+       - '&6&l还能孵化出来吗.'
+    message: '&7&l(!) &a&l你找到了远古之物!'
+    treasure: true
+    commands:
+       - 'announcement:通告 (!) 某个人 找到了 远古之物!'
+68召唤史莱姆王:
+    type: 'item'
+    chance: 0.2
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l史莱姆王苏醒了！'
+    treasure: true
+    commands:
+       - 'announcement:通告 (!) 某个人 召唤了史莱姆王,史莱姆从天而降!'
+       - 'execute as %player% at @s run summon minecraft:slime ~ ~30 ~ {Size:30,CustomName:"史莱姆王"}'
+       - 'execute as %player% at @s run summon minecraft:slime ~5 ~30 ~5 {Size:6,CustomName:"史莱姆亲卫"}'
+       - 'execute as %player% at @s run summon minecraft:slime ~4 ~30 ~5 {Size:4,CustomName:"史莱姆卫兵"}'
+       - 'execute as %player% at @s run summon minecraft:slime ~5 ~30 ~4 {Size:4,CustomName:"史莱姆卫兵"}'
+       - 'execute as %player% at @s run summon minecraft:slime ~3 ~30 ~5 {Size:3,CustomName:"史莱姆精英"}'
+       - 'execute as %player% at @s run summon minecraft:slime ~5 ~30 ~3 {Size:3,CustomName:"史莱姆精英"}'
+       - 'execute as %player% at @s run summon minecraft:slime ~2 ~30 ~5 {Size:2,CustomName:"史莱姆先锋"}'
+       - 'execute as %player% at @s run summon minecraft:slime ~5 ~30 ~2 {Size:2,CustomName:"史莱姆先锋"}'
+       - 'execute as %player% at @s run summon minecraft:slime ~1 ~30 ~5 {Size:1,CustomName:"史莱姆小弟"}'
+       - 'execute as %player% at @s run summon minecraft:slime ~5 ~30 ~1 {Size:1,CustomName:"史莱姆小弟"}'
