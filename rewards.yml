@@ -939,3 +939,47 @@
        - 'execute as %player% at @s run summon minecraft:slime ~5 ~30 ~2 {Size:2,CustomName:"史莱姆先锋"}'
        - 'execute as %player% at @s run summon minecraft:slime ~1 ~30 ~5 {Size:1,CustomName:"史莱姆小弟"}'
        - 'execute as %player% at @s run summon minecraft:slime ~5 ~30 ~1 {Size:1,CustomName:"史莱姆小弟"}'
+69自己的头颅:
+    type: 'item'
+    chance: 0.6
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l自己的头颅！'
+    treasure: true
+    commands:
+       - 'announcement:通告 (!) 某个人的头颅变大成方块了!'
+       - 'execute as %player% at @s run setblock ~ ~1 ~ minecraft:player_head[rotation=0]{profile:"%player%"}'
+70能力的头颅:
+    type: 'item'
+    chance: 0.08
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l能力的头颅！'
+    treasure: true
+    commands:
+       - 'announcement:通告 (!) 某个人的身边 出现了能力的头颅 掰下来 拿去拜拜~'
+       - 'execute as %player% at @s run setblock ~ ~2 ~ minecraft:player_head[rotation=0]{profile:"nenglizuida"}'
+71师叔的头颅:
+    type: 'item'
+    chance: 0.08
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l师叔的头颅！'
+    treasure: true
+    commands:
+       - 'announcement:通告 (!) 某个人的身边 出现了师叔的头颅 掰下来 拿去拜拜~'
+       - 'execute as %player% at @s run setblock ~ ~2 ~ minecraft:player_head[rotation=0]{profile:"ValiantShishu"}'
+72肝帝的头颅:
+    type: 'item'
+    chance: 0.08
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l肝帝的头颅！'
+    treasure: true
+    commands:
+       - 'announcement:通告 (!) 某个人的身边 出现了肝帝的头颅 掰下来 拿去拜拜~'
+       - 'execute as %player% at @s run setblock ~ ~2 ~ minecraft:player_head[rotation=0]{profile:"mioyi"}'   #待定 先预写一个
