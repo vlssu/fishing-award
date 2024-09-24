@@ -216,20 +216,23 @@
     message: '&7&l(!) &a&l被不知名的力量拉入水中，浮起来时获得了 一个海带'
 5召唤葵:
     type: 'item'
-    chance: 0.8
-    material: 'golden_sword'
+    chance: 0.1
+    material: 'fishing_rod'
     amount: 1
     xp: 3
-    name: '&6&l弑葵剑'
+    name: '&6&l钓葵竿'
     lore:
-       - '&c&l被你身边的行商羊驼(葵)吸引而来'
+       - '&c&l史莱姆王被吸引而来'
+       - '&c&l神竿诞生了.'
     enchantments:
-       - 'SHARPNESS:10'
-    message: '&7&l(!) &a&l葵！'
+       - 'lure:5'
+       - 'luck_of_the_sea:5'
+    message: '&7&l(!) &a&l神竿降临！'
     treasure: true
     commands:
-        - 'announcement:通告 (!) 某个人 钓起了一只葵! 并且被赐予一把弑葵剑!'
-        - 'execute as %player% at @s run summon minecraft:trader_llama ~ ~1 ~1 {CustomName:"葵"}'
+       - 'announcement:通告 (!) 某个人 找到了一把神竿,一只史莱姆王被召唤而来!'
+       - 'execute as %player% at @s run summon minecraft:slime ~ ~5 ~5 {Size:30,CustomName:"史莱姆王(葵)"}'
+       - 'effect give %player% conduit_power 180 1'
 6召唤杀手兔砸:
     type: 'item'
     chance: 1
