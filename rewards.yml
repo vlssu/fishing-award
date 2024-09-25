@@ -228,6 +228,7 @@
     enchantments:
        - 'lure:5'
        - 'luck_of_the_sea:5'
+    unbreakable: true
     message: '&7&l(!) &a&l神竿降临！'
     treasure: true
     weather: 'THUNDER'
