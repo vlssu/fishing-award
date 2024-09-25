@@ -217,7 +217,7 @@
     message: '&7&l(!) &a&l被不知名的力量拉入水中，浮起来时获得了 一个海带'
 5葵的钓鱼竿:
     type: 'item'
-    chance: 0.1
+    chance: 0.2
     material: 'fishing_rod'
     amount: 1
     xp: 3
@@ -230,6 +230,7 @@
        - 'luck_of_the_sea:5'
     message: '&7&l(!) &a&l神竿降临！'
     treasure: true
+    weather: 'THUNDER'
     commands:
        - 'announcement:通告 (!) 某个人 找到了 葵的钓鱼竿 神竿降世!'
        - 'effect give %player% conduit_power 180 1'
@@ -284,6 +285,7 @@
         - '&6&l一只河豚很美味,'
         - '&6&l就是身上的刺有点麻烦.'
     message: '&7&l(!) &a&l你找到了冰红茶的小河豚!'
+    weather: 'RAIN'
     commands:
         - 'announcement:通告 (!) 某个人 获得了 冰红茶的小河豚 但是被小河豚的刺扎了一下!'
         - 'effect give %player% poison 10 2'      
@@ -452,6 +454,7 @@
        - 'THORNS:1'
     message: '&7&l(!) &a&l你找到了师叔的裤衩子!'
     treasure: true
+    weather: 'THUNDER'
     commands:
        - 'announcement:通告 (!) 某个人 找到了 师叔丢失的裤衩子!'
 31能力的过期食品:
@@ -483,12 +486,13 @@
        - 'Loyalty:1'
     message: '&7&l(!) &a&l海王小小!'
     treasure: true
+    weather: 'RAIN'
     commands:
         - 'announcement:通告 (!) 某个人 发现了 海王小小!'
         - 'execute as %player% at @s run summon minecraft:elder_guardian ~ ~1 ~1 {CustomName:"海王小小"}'
 33冰心的吞噬稿:
     type: 'item'
-    chance: 0.1
+    chance: 0.2
     material: 'golden_pickaxe'
     amount: 1
     xp: 3
@@ -500,6 +504,7 @@
     unbreakable: true
     message: '&7&l(!) &a&l你找到了一把冰心的吞噬稿!'
     treasure: true
+    weather: 'THUNDER'
     commands:
        - 'announcement:通告 (!) 某个人 找到了 冰心的吞噬稿!'
 34玖月的上衣:
@@ -517,6 +522,7 @@
        - 'THORNS:1'
     message: '&7&l(!) &a&l你找到了玖月的上衣!'
     treasure: true
+    weather: 'THUNDER'
     commands:
        - 'announcement:通告 (!) 某个人 找到了 玖月丢失的上衣!'
 35乞丐的厕纸:
@@ -535,7 +541,7 @@
        - 'effect give %player% hunger 5 1'
 36师叔的牙签:
     type: 'item'
-    chance: 0.1
+    chance: 0.2
     material: 'stick'
     amount: 1
     xp: 3
@@ -546,6 +552,7 @@
        - 'KNOCKBACK:10'
     unbreakable: true
     message: '&7&l(!) &a&l你找到了一根师叔的牙签!'
+    weather: 'THUNDER'
     commands:
        - 'announcement:通告 (!) 某个人 找到了 师叔的牙签 !'
 37童童的理想乡:
@@ -638,6 +645,7 @@
     xp: 3
     message: '&7&l(!) &a&l鱿鱼 !'
     treasure: true
+    weather: 'RAIN'
     commands:
         - 'execute as %player% at @s run summon minecraft:squid ~ ~1 ~1'
 44召唤发光鱿鱼:
@@ -648,6 +656,7 @@
     xp: 3
     message: '&7&l(!) &a&l发光鱿鱼 !'
     treasure: true
+    weather: 'RAIN'
     commands:
        - 'execute as %player% at @s run summon minecraft:glow_squid ~ ~1 ~1'
 45召唤美西螈:
@@ -661,6 +670,7 @@
        - '&6&l怎么跑到这里来了?'
     message: '&7&l(!) &a&l发现了一只美西螈 !'
     treasure: true
+    weather: 'RAIN'
     commands:
        - 'announcement:通告 (!) 某人收到了来自生命的祝福,有一只生灵在他/她身边诞生 !'
        - 'execute as %player% at @s run summon minecraft:axolotl ~ ~1 ~'
@@ -677,6 +687,7 @@
        - 'PROTECTION:3'
     message: '&7&l(!) &a&l你获得了一顶绿帽子!'
     treasure: true
+    weather: 'RAIN'
     commands:
        - 'announcement:通告 (!) 某个人 获得了 绿帽子 !'
 47召唤蠹虫:
@@ -832,6 +843,7 @@
     xp: 3
     message: '&7&l(!) &a&l呱!'
     treasure: true
+    weather: 'RAIN'
     commands:
        - 'announcement:通告 (!) 钓鱼佬真的是除了鱼,什么都能钓到!'
        - 'execute as %player% at @s run summon minecraft:frog ~ ~1 ~'
@@ -843,6 +855,7 @@
     xp: 3
     message: '&7&l(!) &a&l无声的生物!'
     treasure: true
+    weather: 'RAIN'
     commands:
        - 'announcement:通告 (!) 钓鱼佬真的是除了鱼,什么都能钓到!'
        - 'execute as %player% at @s run summon minecraft:tadpole ~ ~1 ~'
@@ -880,7 +893,7 @@
        - 'announcement:通告 (!) 嘿! 谁的船落我这了!'
 66小小的药丸:
     type: 'item'
-    chance: 0.8
+    chance: 1
     material: 'crimson_button'
     amount: 1
     xp: 3
@@ -890,6 +903,7 @@
        - '&6&l结果是小小的搓的失败品.'
     message: '&7&l(!) &a&l你找到了小小丢弃的药丸!'
     treasure: true
+    weather: 'THUNDER'
     commands:
        - 'announcement:通告 (!) 某个人 找到了 小小丢弃的药丸... 有毒!'
        - 'effect give %player% conduit_power 120 2'
@@ -917,6 +931,7 @@
        - '&6&l还能孵化出来吗.'
     message: '&7&l(!) &a&l你找到了远古之物!'
     treasure: true
+    weather: 'THUNDER'
     commands:
        - 'announcement:通告 (!) 某个人 找到了 远古之物!'
 68召唤史莱姆王:
@@ -1005,8 +1020,9 @@
     amount: 1
     xp: 3
     name: '&6&l囍'
-    message: '&7&l(!) &a&l兔砸的婚礼！'
+    message: '&6&l(!) &a&l兔砸的婚礼！'
     treasure: true
+    weather: 'CLEAR'
     commands:
        - 'announcement:通告 (!) 某个人触发了兔砸的婚礼 获得了一个喜糖~'
        - 'give %player% minecraft:redstone 1 [food={can_always_eat:true,eat_seconds:5,nutrition:10,saturation:10},minecraft:item_name="兔砸的喜糖_拿着右键吃"]'
