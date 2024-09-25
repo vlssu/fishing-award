@@ -998,3 +998,27 @@
     commands:
        - 'announcement:通告 (!) 幸运女神在微笑~'
        - 'effect give nenglizuida luck 600 9'
+74兔砸的婚礼:
+    type: 'item'
+    chance: 0.2
+    material: 'red_banner'
+    amount: 1
+    xp: 3
+    name: '&6&l囍'
+    message: '&7&l(!) &a&l兔砸的婚礼！'
+    treasure: true
+    commands:
+       - 'announcement:通告 (!) 某个人触发了兔砸的婚礼 获得了一个喜糖~'
+       - 'give %player% minecraft:redstone 1 [food={can_always_eat:true,eat_seconds:5,nutrition:10,saturation:10},minecraft:item_name="兔砸的喜糖_拿着右键吃"]'
+       - 'execute as %player% at @s run summon minecraft:rabbit ~ ~1 ~2 {CustomName:"新娘兔砸"}'
+       - 'execute as %player% at @s run summon minecraft:turtle ~2 ~1 ~ {CustomName:"新郎荒芜"}'
+       - 'execute as %player% at @s run summon minecraft:firework_rocket ~5 ~1 ~ {LifeTime:30}'
+       - 'execute as %player% at @s run summon minecraft:firework_rocket ~4 ~1 ~ {LifeTime:30}'
+       - 'execute as %player% at @s run summon minecraft:firework_rocket ~3 ~1 ~ {LifeTime:30}'
+       - 'execute as %player% at @s run summon minecraft:firework_rocket ~2 ~1 ~ {LifeTime:30}'
+       - 'execute as %player% at @s run summon minecraft:firework_rocket ~1 ~1 ~ {LifeTime:30}'
+       - 'execute as %player% at @s run summon minecraft:firework_rocket ~ ~1 ~5 {LifeTime:30}'
+       - 'execute as %player% at @s run summon minecraft:firework_rocket ~ ~1 ~4 {LifeTime:30}'
+       - 'execute as %player% at @s run summon minecraft:firework_rocket ~ ~1 ~3 {LifeTime:30}'
+       - 'execute as %player% at @s run summon minecraft:firework_rocket ~ ~1 ~2 {LifeTime:30}'
+       - 'execute as %player% at @s run summon minecraft:firework_rocket ~ ~1 ~1 {LifeTime:30}'
