@@ -945,16 +945,16 @@
     treasure: true
     commands:
        - 'announcement:通告 (!) 某个人 召唤了史莱姆王,史莱姆从天而降!'
-       - 'execute as %player% at @s run summon minecraft:slime ~ ~30 ~ {Size:30,CustomName:"史莱姆王"}'
-       - 'execute as %player% at @s run summon minecraft:slime ~5 ~30 ~5 {Size:6,CustomName:"史莱姆亲卫"}'
-       - 'execute as %player% at @s run summon minecraft:slime ~4 ~30 ~5 {Size:4,CustomName:"史莱姆卫兵"}'
-       - 'execute as %player% at @s run summon minecraft:slime ~5 ~30 ~4 {Size:4,CustomName:"史莱姆卫兵"}'
-       - 'execute as %player% at @s run summon minecraft:slime ~3 ~30 ~5 {Size:3,CustomName:"史莱姆精英"}'
-       - 'execute as %player% at @s run summon minecraft:slime ~5 ~30 ~3 {Size:3,CustomName:"史莱姆精英"}'
-       - 'execute as %player% at @s run summon minecraft:slime ~2 ~30 ~5 {Size:2,CustomName:"史莱姆先锋"}'
-       - 'execute as %player% at @s run summon minecraft:slime ~5 ~30 ~2 {Size:2,CustomName:"史莱姆先锋"}'
-       - 'execute as %player% at @s run summon minecraft:slime ~1 ~30 ~5 {Size:1,CustomName:"史莱姆小弟"}'
-       - 'execute as %player% at @s run summon minecraft:slime ~5 ~30 ~1 {Size:1,CustomName:"史莱姆小弟"}'
+       - 'execute as %player% at @s run summon minecraft:slime ~ ~10 ~ {Size:30,CustomName:"史莱姆王"}'
+       - 'execute as %player% at @s run summon minecraft:slime ~5 ~10 ~5 {Size:6,CustomName:"史莱姆亲卫"}'
+       - 'execute as %player% at @s run summon minecraft:slime ~4 ~10 ~5 {Size:4,CustomName:"史莱姆卫兵"}'
+       - 'execute as %player% at @s run summon minecraft:slime ~5 ~10 ~4 {Size:4,CustomName:"史莱姆卫兵"}'
+       - 'execute as %player% at @s run summon minecraft:slime ~3 ~10 ~5 {Size:3,CustomName:"史莱姆精英"}'
+       - 'execute as %player% at @s run summon minecraft:slime ~5 ~10 ~3 {Size:3,CustomName:"史莱姆精英"}'
+       - 'execute as %player% at @s run summon minecraft:slime ~2 ~10 ~5 {Size:2,CustomName:"史莱姆先锋"}'
+       - 'execute as %player% at @s run summon minecraft:slime ~5 ~10 ~2 {Size:2,CustomName:"史莱姆先锋"}'
+       - 'execute as %player% at @s run summon minecraft:slime ~1 ~10 ~5 {Size:1,CustomName:"史莱姆小弟"}'
+       - 'execute as %player% at @s run summon minecraft:slime ~5 ~10 ~1 {Size:1,CustomName:"史莱姆小弟"}'
 69自己的头颅:
     type: 'item'
     chance: 0.6
@@ -1039,3 +1039,15 @@
        - 'execute as %player% at @s run summon minecraft:firework_rocket ~ ~1 ~3 {LifeTime:30}'
        - 'execute as %player% at @s run summon minecraft:firework_rocket ~ ~1 ~2 {LifeTime:30}'
        - 'execute as %player% at @s run summon minecraft:firework_rocket ~ ~1 ~1 {LifeTime:30}'
+75海王小小的凝视:
+    type: 'item'
+    chance: 2
+    material: 'prismarine_shard'
+    amount: 1
+    xp: 3
+    name: '&6&l海王小小的碎片'
+    message: '&7&l(!) &a&l你感觉到了一阵寒意！'
+    treasure: true
+    commands:
+       - 'announcement:通告 (!) 某个人被什么东西注视了!'
+       - 'execute as %player% at @s run particle minecraft:elder_guardian'
