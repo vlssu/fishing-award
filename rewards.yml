@@ -187,10 +187,10 @@
     material: 'bone'
     amount: 1
     xp: 3
-    message: '&7&l(!) &a&l啊? 巨人 !'
+    message: '&7&l(!) &a&l啊? 巨人!'
     treasure: true
     commands:
-        - 'announcement:通告 (!) 某个人 发现了一只 远古巨人 !'
+        - 'announcement:通告 (!) 某个人发现了一只 远古巨人!'
         - 'execute as %player% at @s run summon minecraft:giant ~ ~1 ~1 {CustomName:"远古巨人"}'
 2黏糊糊的东西:
     type: 'item'
@@ -199,22 +199,22 @@
     amount: 1
     xp: 3
     lore:
-       - '&6&l摸起来黏糊糊的'
-    message: '&7&l(!) &a&l鱼钩被黏糊糊的东西给缠住了'
+       - '&6&l摸起来黏糊糊的.'
+    message: '&7&l(!) &a&l鱼钩被黏糊糊的东西给缠住了!'
 3鱼线断了:
     type: 'item'
     chance: 30
     material: 'string'
     amount: 1
     xp: 3
-    message: '&7&l(!) &a&l你的鱼线断了'
+    message: '&7&l(!) &a&l你的鱼线断了!'
 4海带:
     type: 'item'
     chance: 30
     material: 'kelp'
     amount: 1
     xp: 3
-    message: '&7&l(!) &a&l被不知名的力量拉入水中，浮起来时获得了 一个海带'
+    message: '&7&l(!) &a&l被不知名的力量拉入水中,浮起来时获得了一个 海带!'
 5葵的钓鱼竿:
     type: 'item'
     chance: 0.2
@@ -229,11 +229,11 @@
        - 'lure:5'
        - 'luck_of_the_sea:5'
     unbreakable: true
-    message: '&7&l(!) &a&l神竿降临！'
+    message: '&7&l(!) &a&l神竿降临!'
     treasure: true
     weather: 'THUNDER'
     commands:
-       - 'announcement:通告 (!) 某个人 找到了 葵的钓鱼竿 神竿降世!'
+       - 'announcement:通告 (!) 某个人找到了 葵的钓鱼竿 神竿降世!'
        - 'effect give %player% conduit_power 180 1'
 6召唤杀手兔砸:
     type: 'item'
@@ -241,10 +241,10 @@
     material: 'bone'
     amount: 1
     xp: 3
-    message: '&7&l(!) &a&l召唤! 杀手兔砸 !'
+    message: '&7&l(!) &a&l召唤! 杀手兔砸!'
     treasure: true
     commands:
-        - 'announcement:通告 (!) 某个人 钓起了一只 杀手兔砸!'
+        - 'announcement:通告 (!) 某个人召唤了一只 杀手兔砸!'
         - 'execute as %player% at @s run summon minecraft:rabbit ~ ~1 ~1 {RabbitType:99,CustomName:"杀手兔砸"}'
 7召唤掠夺者:
     type: 'item'
@@ -252,10 +252,10 @@
     material: 'bone'
     amount: 1
     xp: 3
-    message: '&7&l(!) &a&l召唤! 掠夺者 !'
+    message: '&7&l(!) &a&l召唤! 掠夺者!'
     treasure: true
     commands:
-        - 'announcement:通告 (!) 某个人 钓起了一只 掠夺者!'
+        - 'announcement:通告 (!) 某个人召唤了一只 掠夺者!'
         - 'execute as %player% at @s run summon minecraft:pillager ~ ~1 ~1'
 8鳕鱼:
     type: 'item'
@@ -288,7 +288,7 @@
     message: '&7&l(!) &a&l你找到了冰红茶的小河豚!'
     weather: 'RAIN'
     commands:
-        - 'announcement:通告 (!) 某个人 获得了 冰红茶的小河豚 但是被小河豚的刺扎了一下!'
+        - 'announcement:通告 (!) 某个人获得了 冰红茶的小河豚 但是被小河豚的刺扎了一下!'
         - 'effect give %player% poison 10 2'      
         - 'effect give %player% water_breathing 5 1'
 12鞍:
@@ -347,11 +347,11 @@
     xp: 3
     name: '&b&l崽崽的奶瓶'
     lore:
-       - '&6&l小奶夏为了想念那味道而刻意留下来的瓶子'
+       - '&6&l小奶夏为了想念那味道而刻意留下来的瓶子,'
        - '&6&l里面好像只剩下口水了.'
     message: '&7&l(!) &a&l你找到了崽崽的奶瓶!'
     commands:
-       - 'announcement:通告 (!) 某个人 获得了 崽崽的奶瓶!'
+       - 'announcement:通告 (!) 某个人找到了 崽崽的奶瓶!'
 21墨囊:
     type: 'item'
     chance: 16
@@ -400,8 +400,8 @@
     xp: 3
     name: '&b&l蛋挞的臭皮鞋'
     lore:
-       - '&6&l不知从哪掉入了水中'
-       - '&6&l幸运的保护?'
+       - '&6&l不知从哪掉入了水中,'
+       - '&6&l幸运的加持?'
     durability: '1-100'
     message: '&7&l(!) &a&l你找到了蛋挞的臭皮鞋!'
     commands:
@@ -434,10 +434,10 @@
     amount: 2
     xp: 3
     name: '&2&l来自商人的佣金'
-    message: '&7&l(!) &a&l你看到了一个被追杀的商人!'
+    message: '&7&l(!) &a&l你发现了一名被追杀的商人!'
     treasure: true
     commands:
-       - 'announcement:通告 (!) 某个人 发现了一名被追杀的 商人!'
+       - 'announcement:通告 (!) 某个人发现了一名 被追杀的商人!'
        - 'execute as %player% at @s run summon minecraft:wandering_trader ~ ~1 ~1'
        - 'execute as %player% at @s run summon minecraft:husk ~ ~1 ~5'
 30师叔的短裤:
@@ -457,7 +457,7 @@
     treasure: true
     weather: 'THUNDER'
     commands:
-       - 'announcement:通告 (!) 某个人 找到了 师叔丢失的裤衩子!'
+       - 'announcement:通告 (!) 某个人找到了 师叔的裤衩子!'
 31能力的过期食品:
     type: 'item'
     chance: 2
@@ -470,7 +470,7 @@
        - '&6&l闻着都难受.'
     message: '&7&l(!) &a&l你找到了能力的过期食品!'
     commands:
-       - 'announcement:通告 (!) 某个人 找到了 能力的过期食品 虚弱伴随着他/她!'
+       - 'announcement:通告 (!) 某个人找到了 能力的过期食品 虚弱伴随着他/她!'
        - 'effect give %player% weakness 100 2'
 32召唤小小:
     type: 'item'
@@ -489,7 +489,7 @@
     treasure: true
     weather: 'RAIN'
     commands:
-        - 'announcement:通告 (!) 某个人 发现了 海王小小!'
+        - 'announcement:通告 (!) 某个人发现了 海王小小!'
         - 'execute as %player% at @s run summon minecraft:elder_guardian ~ ~1 ~1 {CustomName:"海王小小"}'
 33冰心的吞噬稿:
     type: 'item'
@@ -507,7 +507,7 @@
     treasure: true
     weather: 'THUNDER'
     commands:
-       - 'announcement:通告 (!) 某个人 找到了 冰心的吞噬稿!'
+       - 'announcement:通告 (!) 某个人找到了 冰心的吞噬稿!'
 34玖月的上衣:
     type: 'item'
     chance: 0.4
@@ -525,7 +525,7 @@
     treasure: true
     weather: 'THUNDER'
     commands:
-       - 'announcement:通告 (!) 某个人 找到了 玖月丢失的上衣!'
+       - 'announcement:通告 (!) 某个人找到了 玖月丢失的上衣!'
 35乞丐的厕纸:
     type: 'item'
     chance: 8
@@ -538,7 +538,7 @@
        - '&6&l 114514.'
     message: '&7&l(!) &a&l好臭! 什么东西!'
     commands:
-       - 'announcement:通告 (!) 某个人 获得了 乞丐的厕纸 呕!'
+       - 'announcement:通告 (!) 某个人获得了 乞丐的厕纸 呕!'
        - 'effect give %player% hunger 5 1'
 36师叔的牙签:
     type: 'item'
@@ -555,7 +555,7 @@
     message: '&7&l(!) &a&l你找到了一根师叔的牙签!'
     weather: 'THUNDER'
     commands:
-       - 'announcement:通告 (!) 某个人 找到了 师叔的牙签 !'
+       - 'announcement:通告 (!) 某个人找到了 师叔的牙签 !'
 37童童的理想乡:
     type: 'item'
     chance: 4
@@ -568,7 +568,7 @@
        - '&a不知道是什么样子的呢?'
     message: '&7&l(!) &a&l你找到了一幅画!'
     commands:
-       - 'announcement:通告 (!) 某个人 找到了 一幅画 !'
+       - 'announcement:通告 (!) 某个人找到了 一幅画 !'
 38师叔的望远镜:
     type: 'item'
     chance: 0.2
@@ -583,7 +583,7 @@
     message: '&7&l(!) &a&l你找到了师叔的望远镜!'
     treasure: true
     commands:
-       - 'announcement:通告 (!) 某个人 找到了 师叔丢失的望远镜 !'
+       - 'announcement:通告 (!) 某个人找到了 师叔丢失的望远镜 !'
 39奇怪的旗帜:
     type: 'item'
     chance: 5
@@ -596,7 +596,7 @@
        - '&6&l但还是能看出来是一群人在强迫一个人女装.'
     message: '&7&l(!) &a&l你找到了奇怪的旗帜!'
     commands:
-       - 'announcement:通告 (!) 某个人 找到了 奇怪的旗帜 !'
+       - 'announcement:通告 (!) 某个人找到了 奇怪的旗帜 !'
 40假冒伪劣产品的浓缩精华:
     type: 'item'
     chance: 0.8
@@ -606,7 +606,7 @@
     message: '&7&l(!) &a&l你找到了假冒伪劣产品的浓缩精华!'
     treasure: true
     commands:
-       - 'announcement:通告 (!) 某个人 看到假冒伪劣产品痛喝77瓶冰红茶产出的精华(喝吐了)并且不小心溅到了你,自求多福吧!'
+       - 'announcement:通告 (!) 某个人看到 假冒伪劣产品痛喝77瓶冰红茶而产出了精华(喝吐了),并且不小心溅到了你,自求多福吧!'
        - 'effect give %player% wither 180 2'
 41gmail喂你喝假酒:
     type: 'item'
@@ -617,7 +617,7 @@
     message: '&7&l(!) &a&l你饮用了gmail的假酒!'
     treasure: true
     commands:
-       - 'announcement:通告 (!) 某个人 喝下了 gmail酿造的假酒!'
+       - 'announcement:通告 (!) 某个人喝下了 gmail酿造的假酒!'
        - 'effect give %player% wither 180 3'
        - 'effect give %player% nausea 180 3'
        - 'effect give %player% poison 180 1'
@@ -635,7 +635,7 @@
     message: '&7&l(!) &a&l你找到了樰送出的蛋糕!'
     treasure: true
     commands:
-       - 'announcement:通告 (!) 获得了 樰的蛋糕 但它吸引了掠夺者的注意,他们来了 !'
+       - 'announcement:通告 (!) 某个人找到了 樰的蛋糕 但它吸引了掠夺者的注意,他们来了 !'
        - 'lightning %player%'
        - 'effect give %player% bad_omen 200 1'
 43召唤鱿鱼:
@@ -644,7 +644,7 @@
     material: 'bone'
     amount: 1
     xp: 3
-    message: '&7&l(!) &a&l鱿鱼 !'
+    message: '&7&l(!) &a&l鱿鱼!'
     treasure: true
     weather: 'RAIN'
     commands:
@@ -655,7 +655,7 @@
     material: 'bone'
     amount: 1
     xp: 3
-    message: '&7&l(!) &a&l发光鱿鱼 !'
+    message: '&7&l(!) &a&l发光鱿鱼!'
     treasure: true
     weather: 'RAIN'
     commands:
@@ -667,13 +667,13 @@
     amount: 1
     xp: 3
     lore:
-       - '&6&l用于投喂美西螈的鱼儿'
+       - '&6&l用于投喂美西螈的鱼儿,'
        - '&6&l怎么跑到这里来了?'
-    message: '&7&l(!) &a&l发现了一只美西螈 !'
+    message: '&7&l(!) &a&l发现了一只美西螈!'
     treasure: true
     weather: 'RAIN'
     commands:
-       - 'announcement:通告 (!) 某人收到了来自生命的祝福,有一只生灵在他/她身边诞生 !'
+       - 'announcement:通告 (!) 某人收到了来自生命的祝福,有一只生灵在他/她身边诞生!'
        - 'execute as %player% at @s run summon minecraft:axolotl ~ ~1 ~'
 46海龟帽:
     type: 'item'
@@ -690,7 +690,7 @@
     treasure: true
     weather: 'RAIN'
     commands:
-       - 'announcement:通告 (!) 某个人 获得了 绿帽子 !'
+       - 'announcement:通告 (!) 某个人获得了 绿帽子 !'
 47召唤蠹虫:
     type: 'item'
     chance: 2
@@ -726,10 +726,10 @@
     enchantments:
        - 'power:10'
     unbreakable: true
-    message: '&7&l(!) &a你找到了仙儿的玩具!'
+    message: '&7&l(!) &a你找到了按摩棒!'
     treasure: true
     commands:
-       - 'announcement:通告 (!) 某个人 找到了 一根? 棒子? 这是什么东西?'
+       - 'announcement:通告 (!) 某个人找到了 一根? 按摩棒? 谁用的?'
 51小小希的甜言蜜语:
     type: 'item'
     chance: 0.2
@@ -739,10 +739,10 @@
     name: '&b&l小小希的甜言蜜语'
     lore:
        - '&6&l来自小小希的精酿~'
-    message: '&7&l(!) &a你获得了来自小小希的甜言蜜语 小心敌人!'
+    message: '&7&l(!) &a你获得了来自小小希的甜言蜜语,小心敌人!'
     treasure: true
     commands:
-       - 'announcement:通告 (!) 某个人 获得了 来自小小希的甜言蜜语 但是 敌人来了!'
+       - 'announcement:通告 (!) 某个人获得了 来自小小希的甜言蜜语 但是,敌人来了!'
        - 'effect give %player% saturation 120 2'
        - 'effect give %player% luck 120 1'
        - 'effect give %player% dolphins_grace 120 1'
@@ -764,7 +764,7 @@
     message: '&7&l(!) &a&l你获得了来自MJC的真传!'
     treasure: true
     commands:
-       - 'announcement:通告 (!) 某个人 获得了 来自MJC的真传!'
+       - 'announcement:通告 (!) 某个人获得了 来自MJC的真传!'
        - 'effect give %player% hero_of_the_village 200 1'
        - 'effect give %player% strength 100 1'
 53钓鱼竿:
@@ -869,7 +869,7 @@
     message: '&7&l(!) &a&l海洋的诅咒!'
     treasure: true
     commands:
-       - 'announcement:通告 (!) 有人触发了海洋的诅咒,有一只恼鬼诞生了!'
+       - 'announcement:通告 (!) 有人触发了海洋的诅咒,有一只 恼鬼 诞生了!'
        - 'execute as %player% at @s run summon minecraft:vex ~ ~1 ~'
 64召唤悦灵:
     type: 'item'
@@ -880,7 +880,7 @@
     message: '&7&l(!) &a&l海洋的祝福!'
     treasure: true
     commands:
-       - 'announcement:通告 (!) 有人触发了海洋的祝福,有一只悦灵诞生了!'
+       - 'announcement:通告 (!) 有人触发了海洋的祝福,有一只 悦灵 诞生了!'
        - 'execute as %player% at @s run summon minecraft:allay ~ ~1 ~'
 65船:
     type: 'item'
@@ -906,7 +906,7 @@
     treasure: true
     weather: 'THUNDER'
     commands:
-       - 'announcement:通告 (!) 某个人 找到了 小小丢弃的药丸... 有毒!'
+       - 'announcement:通告 (!) 某个人找到了 小小丢弃的药丸... 啊!~'
        - 'effect give %player% conduit_power 120 2'
        - 'effect give %player% darkness 120 2'
        - 'effect give %player% wither 120 2'
@@ -934,7 +934,7 @@
     treasure: true
     weather: 'THUNDER'
     commands:
-       - 'announcement:通告 (!) 某个人 找到了 远古之物!'
+       - 'announcement:通告 (!) 某个人找到了 远古之物!'
 68召唤史莱姆王:
     type: 'item'
     chance: 0.2
@@ -944,7 +944,7 @@
     message: '&7&l(!) &a&l史莱姆王苏醒了！'
     treasure: true
     commands:
-       - 'announcement:通告 (!) 某个人 召唤了史莱姆王,史莱姆从天而降!'
+       - 'announcement:通告 (!) 某个人 召唤了 史莱姆王 史莱姆从天而降!'
        - 'execute as %player% at @s run summon minecraft:slime ~ ~10 ~ {Size:30,CustomName:"史莱姆王"}'
        - 'execute as %player% at @s run summon minecraft:slime ~5 ~10 ~5 {Size:6,CustomName:"史莱姆亲卫"}'
        - 'execute as %player% at @s run summon minecraft:slime ~4 ~10 ~5 {Size:4,CustomName:"史莱姆卫兵"}'
@@ -975,7 +975,7 @@
     message: '&7&l(!) &a&l能力的头颅！'
     treasure: true
     commands:
-       - 'announcement:通告 (!) 某个人的身边 出现了能力的头颅 掰下来 拿去拜拜~'
+       - 'announcement:通告 (!) 某个人的身边 出现了能力的头颅 掰下来,拿去拜拜~'
        - 'execute as %player% at @s run setblock ~ ~2 ~ minecraft:player_head[rotation=0]{profile:"nenglizuida"}'
 71师叔的头颅:
     type: 'item'
@@ -986,7 +986,7 @@
     message: '&7&l(!) &a&l师叔的头颅！'
     treasure: true
     commands:
-       - 'announcement:通告 (!) 某个人的身边 出现了师叔的头颅 掰下来 拿去拜拜~'
+       - 'announcement:通告 (!) 某个人的身边 出现了师叔的头颅 掰下来,拿去拜拜~'
        - 'execute as %player% at @s run setblock ~ ~2 ~ minecraft:player_head[rotation=0]{profile:"ValiantShishu"}'
 72肝帝的头颅:
     type: 'item'
@@ -997,7 +997,7 @@
     message: '&7&l(!) &a&l肝帝的头颅！'
     treasure: true
     commands:
-       - 'announcement:通告 (!) 某个人的身边 出现了肝帝的头颅 掰下来 拿去拜拜~'
+       - 'announcement:通告 (!) 某个人的身边 出现了肝帝的头颅 掰下来,拿去拜拜~'
        - 'execute as %player% at @s run setblock ~ ~2 ~ minecraft:player_head[rotation=0]{profile:"mioyi"}'   #待定 先预写一个
 73幸运女神降临:
     type: 'item'
@@ -1012,7 +1012,7 @@
     message: '&7&l(!) &a&l幸运女神眷顾了你！'
     treasure: true
     commands:
-       - 'announcement:通告 (!) 幸运女神在微笑~'
+       - 'announcement:通告 (!) 某人受到了 幸运女神 的眷顾，幸运女神在微笑~'
        - 'effect give nenglizuida luck 600 9'
 74兔砸的婚礼:
     type: 'item'
@@ -1025,7 +1025,7 @@
     treasure: true
     weather: 'CLEAR'
     commands:
-       - 'announcement:通告 (!) 某个人触发了兔砸的婚礼 获得了一个喜糖~'
+       - 'announcement:通告 (!) 某个人触发了 兔砸的婚礼 获得了一个喜糖~'
        - 'give %player% minecraft:redstone 1 [food={can_always_eat:true,eat_seconds:5,nutrition:10,saturation:10},minecraft:item_name="兔砸的喜糖_拿着右键吃"]'
        - 'execute as %player% at @s run summon minecraft:rabbit ~ ~1 ~2 {CustomName:"新娘兔砸"}'
        - 'execute as %player% at @s run summon minecraft:turtle ~2 ~1 ~ {CustomName:"新郎荒芜"}'
