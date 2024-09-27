@@ -315,12 +315,16 @@
     material: 'waterlily'
     amount: 1
     xp: 3
-16竹子:
+16模组服腐竹-云:
     type: 'item'
-    chance: 16
+    chance: 6
     material: 'bamboo'
     amount: 1
     xp: 3
+    name: '&b&l模组服腐竹-云'
+    lore:
+       - '&6&l种在地里,'
+       - '&6&l野蛮生长!'
 17绊线钩:
     type: 'item'
     chance: 16
