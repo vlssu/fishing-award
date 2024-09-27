@@ -444,24 +444,24 @@
        - 'announcement:通告 (!) 某个人发现了一名 被追杀的商人!'
        - 'execute as %player% at @s run summon minecraft:wandering_trader ~ ~1 ~1'
        - 'execute as %player% at @s run summon minecraft:husk ~ ~1 ~5'
-30师叔的裤袜:
+30师叔的蕾丝裤袜:
     type: 'item'
     chance: 0.4
     material: 'chainmail_leggings'
     amount: 1
     xp: 3
-    name: '&b&l师叔的裤袜'
+    name: '&b&l师叔的蕾丝裤袜'
     lore:
-       - '&6&l好像是师叔的裤袜?'
+       - '&6&l好像是师叔的蕾丝裤袜?'
        - '&6&l裆部这是什么东西?'
     unbreakable: true
     enchantments:
        - 'THORNS:10'
-    message: '&7&l(!) &a&l你找到了师叔的裤袜!'
+    message: '&7&l(!) &a&l你找到了师叔的蕾丝裤袜!'
     treasure: true
     weather: 'THUNDER'
     commands:
-       - 'announcement:通告 (!) 某个人找到了 师叔的裤袜!'
+       - 'announcement:通告 (!) 某个人找到了 师叔的蕾丝裤袜!'
 31能力的过期食品:
     type: 'item'
     chance: 2
@@ -512,24 +512,24 @@
     weather: 'THUNDER'
     commands:
        - 'announcement:通告 (!) 某个人找到了 冰心的吞噬稿!'
-34玖月的上衣:
+34玖月的黑白背带衣:
     type: 'item'
     chance: 0.4
     material: 'chainmall_chestplate'
     amount: 1
     xp: 3
-    name: '&b&l玖月的上衣'
+    name: '&b&l玖月的黑白背带衣'
     lore:
        - '&6&l玖月在水里洗澡时遗落的?'
        - '&6&l胸前这是什么东西?'
     unbreakable: true
     enchantments:
        - 'THORNS:10'
-    message: '&7&l(!) &a&l你找到了玖月的上衣!'
+    message: '&7&l(!) &a&l你找到了玖月的黑白背带衣!'
     treasure: true
     weather: 'THUNDER'
     commands:
-       - 'announcement:通告 (!) 某个人找到了 玖月丢失的上衣!'
+       - 'announcement:通告 (!) 某个人找到了 玖月丢失的黑白背带衣!'
 35乞丐的厕纸:
     type: 'item'
     chance: 8
@@ -884,8 +884,8 @@
     message: '&7&l(!) &a&l海洋的祝福!'
     treasure: true
     commands:
-       - 'announcement:通告 (!) 有人触发了海洋的祝福,有一只 悦灵 诞生了!'
-       - 'execute as %player% at @s run summon minecraft:allay ~ ~1 ~'
+       - 'announcement:通告 (!) 有人触发了海洋的祝福,有一只 玖月 诞生了!'
+       - 'execute as %player% at @s run summon minecraft:allay ~ ~1 ~ {CustomName:"玖月"}'
 65船:
     type: 'item'
     chance: 0.5
