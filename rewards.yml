@@ -456,7 +456,7 @@
        - '&6&l裆部这是什么东西?'
     unbreakable: true
     enchantments:
-       - 'THORNS:1'
+       - 'THORNS:10'
     message: '&7&l(!) &a&l你找到了师叔的裤衩子!'
     treasure: true
     weather: 'THUNDER'
@@ -524,7 +524,7 @@
        - '&6&l胸前这是什么东西?'
     unbreakable: true
     enchantments:
-       - 'THORNS:1'
+       - 'THORNS:10'
     message: '&7&l(!) &a&l你找到了玖月的上衣!'
     treasure: true
     weather: 'THUNDER'
