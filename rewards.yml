@@ -444,24 +444,24 @@
        - 'announcement:通告 (!) 某个人发现了一名 被追杀的商人!'
        - 'execute as %player% at @s run summon minecraft:wandering_trader ~ ~1 ~1'
        - 'execute as %player% at @s run summon minecraft:husk ~ ~1 ~5'
-30师叔的裤衩子:
+30师叔的裤袜:
     type: 'item'
     chance: 0.4
     material: 'chainmail_leggings'
     amount: 1
     xp: 3
-    name: '&b&l师叔的裤衩子'
+    name: '&b&l师叔的裤袜'
     lore:
-       - '&6&l好像是师叔的裤衩子?'
+       - '&6&l好像是师叔的裤袜?'
        - '&6&l裆部这是什么东西?'
     unbreakable: true
     enchantments:
        - 'THORNS:10'
-    message: '&7&l(!) &a&l你找到了师叔的裤衩子!'
+    message: '&7&l(!) &a&l你找到了师叔的裤袜!'
     treasure: true
     weather: 'THUNDER'
     commands:
-       - 'announcement:通告 (!) 某个人找到了 师叔的裤衩子!'
+       - 'announcement:通告 (!) 某个人找到了 师叔的裤袜!'
 31能力的过期食品:
     type: 'item'
     chance: 2
