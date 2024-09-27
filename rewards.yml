@@ -372,16 +372,20 @@
     xp: 3
 24鹦鹉螺壳:
     type: 'item'
-    chance: 6
+    chance: 4
     material: 'nautilus_shell'
     amount: 1
     xp: 3
-25弓:
+25后羿的旧弓:
     type: 'item'
     chance: 8
     material: 'bow'
     amount: 1
     xp: 3
+    name: '&b&l后羿的旧弓'
+    lore:
+       - '&6&l不知从哪掉入了水中,'
+       - '&6&l逐日,被我射熄火了!'
     durability: '1-100'
     bonus-enchantment-amount: 3
     enchantments:
@@ -440,7 +444,7 @@
        - 'announcement:通告 (!) 某个人发现了一名 被追杀的商人!'
        - 'execute as %player% at @s run summon minecraft:wandering_trader ~ ~1 ~1'
        - 'execute as %player% at @s run summon minecraft:husk ~ ~1 ~5'
-30师叔的短裤:
+30师叔的裤衩子:
     type: 'item'
     chance: 0.4
     material: 'chainmail_leggings'
@@ -1051,3 +1055,22 @@
     commands:
        - 'announcement:通告 (!) 某个人被什么东西注视了!'
        - 'execute as %player% at @s run particle minecraft:elder_guardian'
+76能力的袜子:
+    type: 'item'
+    chance: 0.2
+    material: 'chainmail_boots'
+    amount: 1
+    xp: 3
+    name: '&b&l能力的袜子'
+    lore:
+       - '&6&l好像是能力的袜子?'
+       - '&6&l谁家好人要这个玩意?'
+    unbreakable: true
+    enchantments:
+       - 'DEPTH_STRIDER:10'
+       - 'FEATHER_FALLING:10'
+    message: '&7&l(!) &a&l你找到了能力的袜子!'
+    treasure: true
+    weather: 'THUNDER'
+    commands:
+       - 'announcement:通告 (!) 某个人找到了 能力的袜子!'
