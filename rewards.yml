@@ -1074,3 +1074,22 @@
     weather: 'THUNDER'
     commands:
        - 'announcement:通告 (!) 某个人找到了 能力的袜子!'
+77葵的丝袜:
+    type: 'item'
+    chance: 0.2
+    material: 'chainmail_helmet'
+    amount: 1
+    xp: 3
+    name: '&b&l葵的丝袜'
+    lore:
+       - '&6&l好像是葵的丝袜?'
+       - '&6&l套头用的?'
+    unbreakable: true
+    enchantments:
+       - 'RESPIRATION:3'
+       - 'AQUA_AFFINITY:10'
+    message: '&7&l(!) &a&l你找到了葵的丝袜!'
+    treasure: true
+    weather: 'THUNDER'
+    commands:
+       - 'announcement:通告 (!) 某个人找到了 葵的丝袜!'
