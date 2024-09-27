@@ -1093,3 +1093,17 @@
     weather: 'THUNDER'
     commands:
        - 'announcement:通告 (!) 某个人找到了 葵的丝袜!'
+78召唤白狐玖月:
+    type: 'item'
+    chance: 1
+    material: 'sweet_berries'
+    amount: 1
+    xp: 3
+    name: '&b&l白狐玖月的零食'
+    lore:
+       - '&6&l白狐玖月最爱的零食~'
+    message: '&7&l(!) &a&l白狐玖月!'
+    treasure: true
+    commands:
+        - 'announcement:通告 (!) 某个人发现了一只 白狐玖月!'
+        - 'execute as %player% at @s run summon minecraft:fox ~ ~1 ~ {Type:"snow",CustomName:"白狐玖月"}'
