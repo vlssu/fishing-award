@@ -1113,7 +1113,7 @@
         - 'execute as %player% at @s run summon minecraft:fox ~ ~1 ~ {Type:"snow",CustomName:"白狐玖月"}'
 79获得1元:
     type: 'item'
-    chance: 20
+    chance: 60
     material: 'bone'
     amount: 1
     xp: 3
@@ -1123,7 +1123,7 @@
         - 'eco give %player% 1'
 80获得5元:
     type: 'item'
-    chance: 10
+    chance: 30
     material: 'bone'
     amount: 1
     xp: 3
@@ -1133,7 +1133,7 @@
         - 'eco give %player% 5'
 81获得10元:
     type: 'item'
-    chance: 3
+    chance: 5
     material: 'bone'
     amount: 1
     xp: 3
@@ -1173,7 +1173,7 @@
         - 'eco give %player% 100'
 85扣除1元:
     type: 'item'
-    chance: 15
+    chance: 30
     material: 'bone'
     amount: 1
     xp: 3
