@@ -1111,3 +1111,123 @@
     commands:
         - 'announcement:通告 (!) 某个人发现了一只 白狐玖月!'
         - 'execute as %player% at @s run summon minecraft:fox ~ ~1 ~ {Type:"snow",CustomName:"白狐玖月"}'
+79获得1元:
+    type: 'item'
+    chance: 20
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l获得1元!'
+    treasure: true
+    commands:
+        - 'eco give %player% 1'
+80获得5元:
+    type: 'item'
+    chance: 10
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l获得5元!'
+    treasure: true
+    commands:
+        - 'eco give %player% 5'
+81获得10元:
+    type: 'item'
+    chance: 3
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l获得10元!'
+    treasure: true
+    commands:
+        - 'eco give %player% 10'
+82获得20元:
+    type: 'item'
+    chance: 1
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l获得20元!'
+    treasure: true
+    commands:
+        - 'eco give %player% 20'
+83获得50元:
+    type: 'item'
+    chance: 0.5
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l获得50元!'
+    treasure: true
+    commands:
+        - 'eco give %player% 50'
+84获得100元:
+    type: 'item'
+    chance: 0.1
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l获得100元!'
+    treasure: true
+    commands:
+        - 'eco give %player% 100'
+85扣除1元:
+    type: 'item'
+    chance: 15
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l扣除1元!'
+    treasure: true
+    commands:
+        - 'eco take %player% 1'
+86扣除5元:
+    type: 'item'
+    chance: 5
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l扣除5元!'
+    treasure: true
+    commands:
+        - 'eco take %player% 5'
+87扣除10元:
+    type: 'item'
+    chance: 1
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l扣除10元!'
+    treasure: true
+    commands:
+        - 'eco take %player% 10'
+88扣除20元:
+    type: 'item'
+    chance: 0.5
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l扣除20元!'
+    treasure: true
+    commands:
+        - 'eco take %player% 20'
+89扣除50元:
+    type: 'item'
+    chance: 0.1
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l扣除50元!'
+    treasure: true
+    commands:
+        - 'eco take %player% 50'
+90扣除100元:
+    type: 'item'
+    chance: 0.05
+    material: 'bone'
+    amount: 1
+    xp: 3
+    message: '&7&l(!) &a&l扣除100元!'
+    treasure: true
+    commands:
+        - 'eco take %player% 100'
